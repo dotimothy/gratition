@@ -1,1 +1,36 @@
 Idea File for Cisco Hacks
+
+SIGN UP: https://app.smartsheet.com/b/form/7b0ad5a8ec754e1bab8bed8498bcad82
+
+Info: https://community.cisco.com/t5/collaboration-blogs/cisco-webex-virtual-hackathon-fun-amp-easy-60-teams-win-prizes/ba-p/4154865
+
+Idea 1: Social Destressor Web App (Static)
+Languages: Javascript, HTML, CSS, PHP
+Features (Come up with some stuff):
+
+Plan 1: Minigames: PlaySMR (maybe save for UCI Hacks)
+Virtual Stress Ball //We can make this a side bar or like a minigame (HTML Canvas/WebGL/JS)
+Balloon Popping //Another minigame/module destressor (HTML Canvas/WebGL/JS)
+Anteater Clicker: UCI Anteater eating ants coming from the top of the screen - like cookie clicker but UCI Themed - (HTML Canvas/WebGL/JS)
+COVID Defender: Defend your body from COVID-19 (HTML Canvas/WebGL/JS)
+
+Implement a scoreboard (Data is saved using PHP to a Web Server)
+
+Plan 2: Efficient Scheduler (Plan & manages out your day in some way): Gratition
+Prompts Questions on How You Start Your Day, when is your free time, and select common activities to put in schedule
+When done with the questionnaire, the schedule is created using JS.
+User can save the schedule as a png
+Could be web app  written in Python/JS and uses cron-scheduler module to schedule events based on user parameters inputted
+
+Let’s try and make the UI for Plan 2 to stand out. How would we phrase the questions so the user feels comfortable answering them (write your thoughts below!)
+
+Make UI good 
+Audio: add more musical sounds as each question gets completed 
+Make it visually appealing
+Questions should be engaging
+Answers should be quick and easy (not short answer types for all, mostly MCQ)
+Less words, maybe emojis or pictures? Yes! Should we have a voice read the questions as well? (A natural one) (user picks man or woman’s voice)
+We can have like a choose your assistant thing  (at set up)
+Google has a pretty good library for that in python
+Making transitions seamless for each question (fade transitions or something modern) 
+Let users pick a schedule theme (cute, dark, modern…, custom)
