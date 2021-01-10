@@ -5,7 +5,11 @@
 <!--Alex Wang-->
 <!--Christina Wong-->
 
-
+<!-- notes
+//today: questions / layout
+//submit inside user box and > array of answers
+//UI adjustments after
+-->
 
 <head>
 <title> Gratition: The Efficient Virtual Scheduler</title>
@@ -16,11 +20,40 @@
 <body>
 
 <h1>Welcome to Gratition!</h1>
+<button onclick="startGratiton()">Start Gratition</button>
 
+<!--SAQ Question Template-->
+<div id="question1" class="question">
+  <h2>Question 1: What Is Your Name?</h2>
+  <label class="label"></label>
+  <input id="answer1" class="saq"></input><br>
+  <button onclick="submit('question1','answer1')"/>Submit</button>
+</div>
+
+<!--MCQ Question Template-->
+<div id="question2" class="question">
+  <h2>Question 2: What is Your Surname?</h2>
+  <label style=" padding: 5px; font-size: 2.5rem; line-height: 1.8;"></label>
+
+  <button onclick="submit('question2','answer2')"/>Submit</button>
+</label>
+</div>
+
+<!-- finish short answer question section-->
+
+<div id="question3" class="question">
+  <h2> Question 3 </h2>
+  <label style="padding: 5px; font-size: 2.5rem; line-height: 1.8;"></label>
+  <input type="radio" name="option" id="mcq1" class="mcq">
+  Hello</input><br>
+  <input id="answer3" class="saq"></input><br>
+  <button onclick="submit('question3','answer3')"/>Submit</button>
+</label>
+</div>
 
 </body>
 
 
-<script src="main.js">
+<script src="main.js"></script>
 
 </html>
