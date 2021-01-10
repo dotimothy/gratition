@@ -7,6 +7,14 @@
   width: 50%;
 }
 
+#question1, #question2, #question3, #question4 {
+  display:none;
+}
+
+#question1.clicked, #question2.clicked, #question3.clicked, #question4.clicked {
+  display:none;
+}
+
 .question {
   padding: 10px;
 }
