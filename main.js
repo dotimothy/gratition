@@ -28,7 +28,7 @@ function q3a(answer) {
     checklist3[0] = answer;
     }
     else if(checklist3[0] == "CB Answer1") {
-      checklist3[0] == "";
+      checklist3[0] = "";
     }
   }
   if(answer == "CB Answer2") {
@@ -36,7 +36,7 @@ function q3a(answer) {
     checklist3[1] = answer;
     }
     else if(checklist3[1] == "CB Answer1") {
-      checklist3[1] == "";
+      checklist3[1] = "";
     }
   }
   if(answer == "CB Answer3") {
@@ -44,17 +44,21 @@ function q3a(answer) {
     checklist3[2] = answer;
     }
     else if(checklist3[2] == "CB Answer3") {
-      checklist3[2] == "";
+      checklist3[2] = "";
     }
   }
+}
 
 function q3b() {
-  var final;
+  var final = "";
   for(var i = 0; i < 3; i++) {
-    final += checklist[i];
-    if(i != 2) {
-      final += ,
+    if(checklist3[i] != "") {
+      final += checklist3[i];
+      if(i != 2) {
+        final += ",";
+      }
     }
+
   }
   answers[2] = final;
   transition("question3","Welcome");
