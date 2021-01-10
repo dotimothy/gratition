@@ -24,13 +24,25 @@ Could be web app  written in Python/JS and uses cron-scheduler module to schedul
 
 Let’s try and make the UI for Plan 2 to stand out. How would we phrase the questions so the user feels comfortable answering them (write your thoughts below!)
 
-Make UI good 
-Audio: add more musical sounds as each question gets completed 
+Make UI good
+Audio: add more musical sounds as each question gets completed
 Make it visually appealing
 Questions should be engaging
 Answers should be quick and easy (not short answer types for all, mostly MCQ)
 Less words, maybe emojis or pictures? Yes! Should we have a voice read the questions as well? (A natural one) (user picks man or woman’s voice)
 We can have like a choose your assistant thing  (at set up)
 Google has a pretty good library for that in python
-Making transitions seamless for each question (fade transitions or something modern) 
+Making transitions seamless for each question (fade transitions or something modern)
 Let users pick a schedule theme (cute, dark, modern…, custom)
+
+10 Questions:
+
+1. What is your name? (SAQ)
+2. How are you feeling today? (MCQ EMOJI)
+3. What did I accomplish since waking up? (SAQ)
+4. Did these accomplishments make you happy? (MCQ)
+5. Name one thing you would like to complete today (SAQ)
+6. What time did you go to bed last night? (MCQ)
+7. What made you lose track of time today? (MCQ)
+8. Today I was so _______
+9.
