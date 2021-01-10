@@ -21,22 +21,42 @@ function q2b() {
   transition("question2","question3");
 }
 
-var a3 = b3 = c3 = 0;
+var checklist3 = ["","",""];
 function q3a(answer) {
-  var checklist = [];
   if(answer == "CB Answer1") {
-    if(a3 == 0)
-    checklist[0] = answer;
+    if(checklist3[0] == "") {
+    checklist3[0] = answer;
+    }
+    else if(checklist3[0] == "CB Answer1") {
+      checklist3[0] == "";
+    }
   }
-  else if(answer == "CB Answer2" && b3 == 0) {
-    checklist[1] = answer;
-    b3++;
+  if(answer == "CB Answer2") {
+    if(checklist3[1] == "") {
+    checklist3[1] = answer;
+    }
+    else if(checklist3[1] == "CB Answer1") {
+      checklist3[1] == "";
+    }
   }
-  else if(answer == "CB Answer3" && c3 == 0)
-
-}
+  if(answer == "CB Answer3") {
+    if(checklist3[2] == "") {
+    checklist3[2] = answer;
+    }
+    else if(checklist3[2] == "CB Answer3") {
+      checklist3[2] == "";
+    }
+  }
 
 function q3b() {
+  var final;
+  for(var i = 0; i < 3; i++) {
+    final += checklist[i];
+    if(i != 2) {
+      final += ,
+    }
+  }
+  answers[2] = final;
   transition("question3","Welcome");
 }
 
