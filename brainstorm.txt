@@ -44,5 +44,7 @@ Let users pick a schedule theme (cute, dark, modern…, custom)
 5. Name one thing you would like to complete today (SAQ)
 6. What time did you go to bed last night? (MCQ)
 7. What made you lose track of time today? (MCQ)
-8. Today I was so _______
-9.
+8. Today I was so _______ (SAQ)
+9. When I go to sleep, I want to feel _______ (SAQ)
+10. How much water did you drink today? (MCQ)
+11. When did you take time for yourself today? (CBQ)
