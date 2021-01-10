@@ -48,3 +48,5 @@ Let users pick a schedule theme (cute, dark, modern…, custom)
 9. When I go to sleep, I want to feel _______ (SAQ)
 10. How much water did you drink today? (MCQ)
 11. When did you take time for yourself today? (CBQ)
+
+Plan: Take responses, generate Mad-Lib type decoration as an image
