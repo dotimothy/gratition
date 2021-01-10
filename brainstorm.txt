@@ -50,3 +50,4 @@ Let users pick a schedule theme (cute, dark, modern…, custom)
 11. When did you take time for yourself today? (CBQ)
 
 Plan: Take responses, generate Mad-Lib type decoration as an image
+Extra: Have mad-lib be typed out live
