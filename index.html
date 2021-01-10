@@ -12,44 +12,55 @@
 -->
 
 <head>
-<title> Gratition: The Efficient Virtual Scheduler</title>
-<link rel="stylesheet" href="style.css" />
+  <title> Gratition: The Efficient Virtual Scheduler</title>
+  <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
 
-<h1>Welcome to Gratition!</h1>
-<button onclick="startGratiton()">Start Gratition</button>
+<div id="interface">
 
-<!--SAQ Question Template-->
-<div id="question1" class="question">
-  <h2>Question 1: What Is Your Name?</h2>
-  <label class="label"></label>
-  <input id="answer1" class="saq"></input><br>
-  <button onclick="submit('question1','answer1')"/>Submit</button>
+<div id="Welcome">
+    <h1>Welcome to Gratition!</h1>
+    <button onclick="startGratiton()">Start Gratition</button>
 </div>
+    <!--SAQ Question Template-->
+    <div id="question1" class="question">
+      <h2>Question 1: What Is Your Full Name?</h2>
+      <label class="label"></label>
+      <input id="answer1" class="saq"></input>
+      <br><br>
+      <button onclick="q1()">Submit</button>
+    </div>
 
-<!--MCQ Question Template-->
-<div id="question2" class="question">
-  <h2>Question 2: What is Your Surname?</h2>
-  <label style=" padding: 5px; font-size: 2.5rem; line-height: 1.8;"></label>
+    <!--MCQ Question Template-->
+    <div id="question2" class="question">
+      <h2> Question 2: Sample MCQ </h2>
+      <label class="label">Answer1</label>
+      <input type="radio" name="choice" value="Answer1" id="mcq2a" class="mcq" onclick="q2a('Answer1')"></input><br><br>
+      <label class="label">Answer2</label>
+      <input type="radio" name="choice" value="Answer2" id="mcq2b" class="mcq" onclick="q2a('Answer2')"></input><br><br>
+      <label class="label">Answer3</label>
+      <input type="radio" name="choice" value="Answer3" id="mcq2c" class="mcq" onclick="q2a('Answer3')"></input><br><br>
+      <button onclick="q2b('question2','mcq')"/>Submit</button>
+    </div>
 
-  <button onclick="submit('question2','answer2')"/>Submit</button>
-</label>
-</div>
+    <!--Checklbox Question Template-->
+    <div id="question3" class="question">
+      <h2> Question 3: Checkbox </h2>
+      <form id="mcqform">
+        <input type="checkbox" name="option" value="CB Answer1"  id="mcq3a" class="mcq">CB Answer1</input><br><br>
 
-<!-- finish short answer question section-->
+        <input type="checkbox" name="option" value="CB Answer2" id="mcq3b" class="mcq">CB Answer2</input><br><br>
 
-<div id="question3" class="question">
-  <h2> Question 3 </h2>
-  <label style="padding: 5px; font-size: 2.5rem; line-height: 1.8;"></label>
-  <input type="radio" name="option" id="mcq1" class="mcq">
-  Hello</input><br>
-  <input id="answer3" class="saq"></input><br>
-  <button onclick="submit('question3','answer3')"/>Submit</button>
-</label>
-</div>
+        <input type="checkbox" name="option" value="CB Answer3" id="mcq3c" class="mcq">CB Answer3</input><br><br>
+      </form>
+
+      <button onclick="mcqsubmit('#mcqform.choice.value','number-of-')"/>Submit</button>
+    </div>
+
+  </div>
 
 </body>
 

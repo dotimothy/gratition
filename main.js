@@ -3,24 +3,25 @@ var questions = ["question1","question2","question3","question4","question5","qu
 
 function startGratiton() {
 //separate function for transitions
-  return;
+  transition("Welcome","question1");
 
 }
 
-function submit(question,answer) {
-  var index;
-  var input = document.getElementById(answer).value;
-  for(var i = 0; i < questions.length; i++) {
-    if(questions[i] == question) {
-        index = i;
-    }
-  }
+function q1() {
+  input = document.getElementById("answer1").value;
+  answers[0] = input;
+  transition("question1","question2");
+}
 
-  answers[index] = input;
-  document.write(input);
+function q2a(answer) {
+  answers[1] = answer;
+}
+
+function q2b() {
+  transition("question2","question3");
 }
 
 function transition(element1,element2) {
-  document.getElementbyID('element1').style.display = 'none';
-  document.getElementbyID('element2').style.display = 'block';
+  document.getElementById('element1').style.display = 'none';
+  document.getElementById('element2').style.display = 'block';
 }
