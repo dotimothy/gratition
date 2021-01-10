@@ -45,14 +45,18 @@ Let users pick a schedule theme (cute, dark, modern…, custom)
 5. Name one thing you would like to complete today (SAQ)
 6. How many hours of sleep did you get? (MCQ)
     a. 10+ hours  b. 7-9 hours  c. 5-6 hours  d. 4 hours or less
-6. What time did you go to bed last night? (MCQ)
+7. What time did you go to bed last night? (MCQ)
     a. 10:00pm-midnight   b. 1:00am-3:00am  c. 4:00am-6:00am
-7. What made you lose track of time today? (MCQ)
-    a. inner turmoil   b. environmental distractions  c. procrastination  d. 
-8. Today I was so _______ (SAQ)
-9. When I go to sleep, I want to feel _______ (SAQ)
-10. How much water did you drink today? (MCQ)
-11. When did you take time for yourself today? (CBQ)
+8. What made you lose track of time today? (MCQ)
+    a. inner turmoil   b. environmental distractions  c. procrastination  d.
+9. Today I was so _______ (SAQ)
+10. When I go to sleep, I want to feel _______ (SAQ)
+11. How much water did you drink today? (MCQ)
+12. When did you take time for yourself today? (CBQ)
 
 Plan: Take responses, generate Mad-Lib type decoration as an image
 Extra: Have mad-lib be typed out live
+
+Mad-Lib:
+
+Hello Gratition user! Today you were feeling____.
