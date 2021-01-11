@@ -7,8 +7,13 @@
   width: 50%;
 }
 
-#question1, #question2, #question3, #question4 {
+#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #result {
   display:none;
+}
+
+#madlib {
+  font-size: 1.5em;
+  font-family: sans-serif;
 }
 
 #question1.clicked, #question2.clicked, #question3.clicked, #question4.clicked {

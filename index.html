@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <!--Gratition Authors-->
 <!--Timothy Do-->
 <!--Jason Vu-->
@@ -25,7 +26,7 @@
     <h1>Welcome to Gratition!</h1>
     <button onclick="startGratiton()">Start Gratition</button>
 </div>
-    <!--Question 1: Name-->
+
     <div id="question1" class="question">
       <h2>Question 1: What Is Your Full Name?</h2>
       <label class="label"></label>
@@ -34,31 +35,117 @@
       <button onclick="q1()">Submit</button>
     </div>
 
-    <!--MCQ Question Template-->
     <div id="question2" class="question">
-      <h2> Question 2: Sample MCQ </h2>
-      <label class="label">Answer1</label>
-      <input type="radio" name="choice" value="Answer1" id="mcq2a" class="mcq" onclick="q2a('Answer1')"></input><br><br>
-      <label class="label">Answer2</label>
-      <input type="radio" name="choice" value="Answer2" id="mcq2b" class="mcq" onclick="q2a('Answer2')"></input><br><br>
-      <label class="label">Answer3</label>
-      <input type="radio" name="choice" value="Answer3" id="mcq2c" class="mcq" onclick="q2a('Answer3')"></input><br><br>
-      <button onclick="q2b('question2','mcq')"/>Submit</button>
+      <h2> Question 2: How are you feeling today? </h2>
+      <label class="label">A. Happy 😊</label>
+      <input type="radio" name="choice" value="happy 😊" id="mcq2a" class="mcq" onclick="q2a('happy 😊')"></input><br><br>
+      <label class="label">B. Sad 😔</label>
+      <input type="radio" name="choice" value="sad 😔" id="mcq2b" class="mcq" onclick="q2a('sad 😔')"></input><br><br>
+      <label class="label">C. Angry 😡</label>
+      <input type="radio" name="choice" value="angry 😡" id="mcq2c" class="mcq" onclick="q2a('angry 😡')"></input><br><br>
+      <label class="label">D. Meh 😕</label>
+      <input type="radio" name="choice" value="meh 😕" id="mcq2d" class="mcq" onclick="q2a('meh 😕')"></input><br><br>
+      <button onclick="q2b()"/>Submit</button>
     </div>
 
-    <!--Checklbox Question Template-->
     <div id="question3" class="question">
-      <h2> Question 3: Checkbox </h2>
-      <form id="mcqform">
-        <input type="checkbox" name="option" value="CB Answer1"  id="mcq3a" class="mcq" onclick="q3a('CB Answer1')">CB Answer1</input><br><br>
-
-        <input type="checkbox" name="option" value="CB Answer2" id="mcq3b" class="mcq" onclick="q3a('CB Answer2')">CB Answer2</input><br><br>
-
-        <input type="checkbox" name="option" value="CB Answer3" id="mcq3c" class="mcq" onclick="q3a('CB Answer3')">CB Answer3</input><br><br>
-      </form>
-
-      <button onclick="q3b()"/>Submit</button>
+      <h2>Question 3: What Did I Accomplish Since Waking Up?</h2>
+      <label class="label"></label>
+      <input id="answer3" class="saq"></input>
+      <br><br>
+      <button onclick="q3()">Submit</button>
     </div>
+
+    <div id="question4" class="question">
+      <h2> Question 4: Did these accomplishments make you happy? </h2>
+      <label class="label">A. Super</label>
+      <input type="radio" name="choice" value="super" id="mcq4a" class="mcq" onclick="q4a('super')"></input><br><br>
+      <label class="label">B. Somewhat</label>
+      <input type="radio" name="choice" value="somewhat" id="mcq4b" class="mcq" onclick="q4a('somewhat')"></input><br><br>
+      <label class="label">C. Not Really</label>
+      <input type="radio" name="choice" value="not really" id="mcq4c" class="mcq" onclick="q4a('not really')"></input><br><br>
+      <label class="label">D. Not at All</label>
+      <input type="radio" name="choice" value="not at all" id="mcq4d" class="mcq" onclick="q4a('not at all')"></input><br><br>
+      <button onclick="q4b()"/>Submit</button>
+    </div>
+
+    <div id="question5" class="question">
+      <h2>Question 5: Name One Thing You Would Like to Complete Today: </h2>
+      <label class="label"></label>
+      <input id="answer5" class="saq"></input>
+      <br><br>
+      <button onclick="q5()">Submit</button>
+    </div>
+
+    <div id="question6" class="question">
+      <h2> Question 6: How Many Hours of Sleep Did You Get Last Night?</h2>
+      <label class="label">A. 10+ Hours</label>
+      <input type="radio" name="choice" value="10+ hours" id="mcq6a" class="mcq" onclick="q6a('10+ hours')"></input><br><br>
+      <label class="label">B. 7-9 Hours</label>
+      <input type="radio" name="choice" value="7-9 Hours" id="mcq6b" class="mcq" onclick="q6a('7-9 hours')"></input><br><br>
+      <label class="label">C. 5-6 Hours</label>
+      <input type="radio" name="choice" value="5-6 Hours" id="mcq6c" class="mcq" onclick="q6a('5-6 hours')"></input><br><br>
+      <label class="label">D. Less than 4 Hours</label>
+      <input type="radio" name="choice" value="less than 4 hours" id="mcq6d" class="mcq" onclick="q6a('less than 4 hours')"></input><br><br>
+      <button onclick="q6b()"/>Submit</button>
+    </div>
+
+    <div id="question7" class="question">
+      <h2> Question 7: What Time Did You Go to Bed Last Night?</h2>
+      <label class="label">A. 8 PM - 9 PM</label>
+      <input type="radio" name="choice" value="8 PM - 9 PM" id="mcq7a" class="mcq" onclick="q7a('at around 8 PM - 9 PM')"></input><br><br>
+      <label class="label">B. 10 PM - 11 PM</label>
+      <input type="radio" name="choice" value="10 PM - 11 PM" id="mcq7b" class="mcq" onclick="q7a('at around 10 PM - 11 PM')"></input><br><br>
+      <label class="label">C. 11 PM - 12 AM</label>
+      <input type="radio" name="choice" value="11 PM - 12 AM" id="mcq7c" class="mcq" onclick="q7a('at around 11 PM - 12 AM')"></input><br><br>
+      <label class="label">D. Past 12 AM</label>
+      <input type="radio" name="choice" value="past 12 AM" id="mcq7d" class="mcq" onclick="q7a('past 12 AM')"></input><br><br>
+      <button onclick="q7b()"/>Submit</button>
+    </div>
+
+    <div id="question8" class="question">
+      <h2> Question 8: What Made You Lose Track of Time Today?</h2>
+      <label class="label">A. Inner Turmoil</label>
+      <input type="radio" name="choice" value="inner turmoil" id="mcq8a" class="mcq" onclick="q8a('inner turmoil')"></input><br><br>
+      <label class="label">B. Environmental Distractions</label>
+      <input type="radio" name="choice" value="environmental distractions" id="mcq8b" class="mcq" onclick="q8a('environmental distractions')"></input><br><br>
+      <label class="label">C. Procrastination</label>
+      <input type="radio" name="choice" value="procrastination" id="mcq8c" class="mcq" onclick="q8a('procrastination')"></input><br><br>
+      <label class="label">D. Current Events</label>
+      <input type="radio" name="choice" value="current events" id="mcq8d" class="mcq" onclick="q8a('current events')"></input><br><br>
+      <button onclick="q8b()"/>Submit</button>
+    </div>
+
+      <div id="question9" class="question">
+        <h2>Question 9: Fill in the Blank: Today I was so "______"</h2>
+        <label class="label"></label>
+        <input id="answer9" class="saq"></input>
+        <br><br>
+        <button onclick="q9()">Submit</button>
+      </div>
+
+      <div id="question10" class="question">
+        <h2>Question 10: When I go to sleep, I want to feel "_______"</h2>
+        <label class="label"></label>
+        <input id="answer10" class="saq"></input>
+        <br><br>
+        <button onclick="q10()">Submit</button>
+      </div>
+
+      <div id="question11" class="question">
+        <h2>Question 11: When Time Are You Free Today? (Please Indicate Hour and AM/PM)</h2>
+        <label class="label"></label>
+        <input id="answer11" class="saq"></input>
+        <br><br>
+        <button onclick="q11()">Submit</button>
+      </div>
+
+      <div id="result">
+        <div id="madlib">
+
+        </div>
+        <a href="index.html"><h2>Start a New Gratition</h2></a>
+      </div>
 
   </div>
 

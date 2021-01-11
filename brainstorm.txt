@@ -35,53 +35,32 @@ Google has a pretty good library for that in python
 Making transitions seamless for each question (fade transitions or something modern)
 Let users pick a schedule theme (cute, dark, modern…, custom)
 
-Question Bank:
-
 1. What is your name? (SAQ)
 2. How are you feeling today? (MCQ EMOJI)
 3. What did I accomplish since waking up? (SAQ)
 4. Did these accomplishments make you happy? (MCQ)
-    a. super  b. somewhat c. not really
+    a. super  b. somewhat c. not really d. not at all
 5. Name one thing you would like to complete today (SAQ)
-6. How many hours of sleep did you get? (MCQ)
-    a. 10+ hours  b. 7-9 hours  c. 5-6 hours  d. 4 hours or less
+6. How many hours of sleep did you get last night? (MCQ)
+    a. 10+ hours  b. 7-9 hours  c. 5-6 hours  d. less than 4 hours
 7. What time did you go to bed last night? (MCQ)
-    a. 8:00pm-10:00pm b. 10:00pm-Midnight   c. 1:00am-3:00am  d. 4:00am-6:00am
-8. How long can you concentrate on work? (MCQ)
-    a.
-9. What made you lose track of time today? (MCQ)
-    a. inner turmoil   b. environmental distractions  c. procrastination  d. national events
-10. Today I was so _______ (SAQ)
-11. When I go to sleep, I want to feel _______ (SAQ)
-12. How much water did you drink today? (MCQ)
-13. When did you take time for yourself today? (CBQ)
-
-Official Question List:
-1. What is your name? (SAQ)
-2. How are you feeling today? (MCQ EMOJI)
-3. What did I accomplish since waking up? (SAQ)
-4. Did these accomplishments make you happy? (MCQ)
-    a. super  b. somewhat c. not really
-5. Name one thing you would like to complete today (SAQ)
-6. How many hours of sleep did you get? (MCQ)
-    a. 10+ hours  b. 7-9 hours  c. 5-6 hours  d. 4 hours or less
-7. What time did you go to bed last night? (MCQ)
-    a. 8:00pm-10:00pm b. 10:00pm-Midnight   c. 1:00am-3:00am  d. 4:00am-6:00am
-9. What made you lose track of time today? (MCQ)
-    a. inner turmoil   b. environmental distractions  c. procrastination  d. national events
-10. Today I was so _______ (SAQ)
-11. When I go to sleep, I want to feel _______ (SAQ)
-12. When did you take time for yourself today? (CBQ)
-
-
+    a. 8 PM - 9 PM b. 10 PM - 11 PM   c. 11 PM - 12 AM  d. Past 12 AM
+8. What made you lose track of time today? (MCQ)
+    a. inner turmoil   b. environmental distractions  c. procrastination  d. current events
+9. Today I was so _______ (SAQ)
+10. When I go to sleep, I want to feel _______ (SAQ)
+11. When time are you free today? (Please Indicate Hour and AM/PM) (SAQ)
 
 Plan: Take responses, generate Mad-Lib type decoration as an image
 Extra: Have mad-lib be typed out live
 
 Mad-Lib:
 
-Hello Gratition user, whose name I see is __1__! Today you were feeling __2__. After waking up you managed to accomplish ___3___ which made you __4___ happy.
+Hello user of Gratition, whose name I see is __1__! Today you were feeling __2__. After waking up you managed to accomplish ___3___ which made you __4___ happy.
 The most notable thing that you completed today was __5____ which was very impressive considering you got __6___ of sleep after
-going to bed at around __7___ last night. Today may have been a bit stressful due to __9___ that made you lose track of time, but you got
-through it! Overall, you were so __10___ today, but tomorrow is a new day! When you go to sleep you want to feel __11___ and after
-taking time for yourself at __13___ today, you definitely deserve to feel that way!
+going to bed at around __7___ last night. Today may have been a bit stressful due to __8___ that made you lose track of time, but you got
+through it! Overall, you were so __9___ today, but tomorrow is a new day! When you go to sleep you want to feel __10___ and after
+taking time for yourself at __11___ today, you definitely deserve to feel that way!
+
+
+ur madlib sounds like the average cs un dergrad lamo
