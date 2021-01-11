@@ -61,7 +61,7 @@ Extra: Have mad-lib be typed out live
 
 Mad-Lib:
 
-Hello Gratition user! Today you were feeling __2__. After waking up you managed to accomplish ___3___ which made you __4___ happy.
+Hello Gratition user named __1__! Today you were feeling __2__. After waking up you managed to accomplish ___3___ which made you __4___ happy.
 The most notable thing that you completed today was __5____ which was very impressive considering you got __6___ of sleep after
 going to bed at __7___ last night. Today may have been a bit stressful due to __9___ that made you lose track of time, but you got
 through it! Overall, you were so __10___ today, but tomorrow is a new day! When you go to sleep you want to feel __11___ and after
