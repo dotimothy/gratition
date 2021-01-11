@@ -41,7 +41,7 @@ Let users pick a schedule theme (cute, dark, modern…, custom)
 2. How are you feeling today? (MCQ EMOJI)
 3. What did I accomplish since waking up? (SAQ)
 4. Did these accomplishments make you happy? (MCQ)
-    a. yes  b. somewhat c. not really
+    a. super  b. somewhat c. not really
 5. Name one thing you would like to complete today (SAQ)
 6. How many hours of sleep did you get? (MCQ)
     a. 10+ hours  b. 7-9 hours  c. 5-6 hours  d. 4 hours or less
@@ -59,4 +59,8 @@ Extra: Have mad-lib be typed out live
 
 Mad-Lib:
 
-Hello Gratition user! Today you were feeling____.
+Hello Gratition user! Today you were feeling __2__. After waking up you managed to accomplish __3____ which made you __4___ happy.
+The most notable thing that you completed today was __5____ which was very impressive considering you got __6___ of sleep after
+going to bed at __7___ last night. Today may have been a bit stressful due to __8___ that made you lose track of time, but you got
+through it! Overall, you were ___9__ today, but tomorrow is a new day! When you go to sleep you want to feel __10___ and after
+taking time for yourself at __12___ today, you definitely deserve to feel that way!
