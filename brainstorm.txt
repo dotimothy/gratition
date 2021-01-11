@@ -35,7 +35,7 @@ Google has a pretty good library for that in python
 Making transitions seamless for each question (fade transitions or something modern)
 Let users pick a schedule theme (cute, dark, modern…, custom)
 
-10 Questions:
+Questions:
 
 1. What is your name? (SAQ)
 2. How are you feeling today? (MCQ EMOJI)
@@ -47,20 +47,22 @@ Let users pick a schedule theme (cute, dark, modern…, custom)
     a. 10+ hours  b. 7-9 hours  c. 5-6 hours  d. 4 hours or less
 7. What time did you go to bed last night? (MCQ)
     a. 10:00pm-midnight   b. 1:00am-3:00am  c. 4:00am-6:00am
-8. What made you lose track of time today? (MCQ)
+8. How long can you concentrate on work? (MCQ)
+    a.
+9. What made you lose track of time today? (MCQ)
     a. inner turmoil   b. environmental distractions  c. procrastination  d.
-9. Today I was so _______ (SAQ)
-10. When I go to sleep, I want to feel _______ (SAQ)
-11. How much water did you drink today? (MCQ)
-12. When did you take time for yourself today? (CBQ)
+10. Today I was so _______ (SAQ)
+11. When I go to sleep, I want to feel _______ (SAQ)
+12. How much water did you drink today? (MCQ)
+13. When did you take time for yourself today? (CBQ)
 
 Plan: Take responses, generate Mad-Lib type decoration as an image
 Extra: Have mad-lib be typed out live
 
 Mad-Lib:
 
-Hello Gratition user! Today you were feeling __2__. After waking up you managed to accomplish __3____ which made you __4___ happy.
+Hello Gratition user! Today you were feeling __2__. After waking up you managed to accomplish ___3___ which made you __4___ happy.
 The most notable thing that you completed today was __5____ which was very impressive considering you got __6___ of sleep after
-going to bed at __7___ last night. Today may have been a bit stressful due to __8___ that made you lose track of time, but you got
-through it! Overall, you were ___9__ today, but tomorrow is a new day! When you go to sleep you want to feel __10___ and after
-taking time for yourself at __12___ today, you definitely deserve to feel that way!
+going to bed at __7___ last night. Today may have been a bit stressful due to __9___ that made you lose track of time, but you got
+through it! Overall, you were so __10___ today, but tomorrow is a new day! When you go to sleep you want to feel __11___ and after
+taking time for yourself at __13___ today, you definitely deserve to feel that way!
