@@ -1,4 +1,4 @@
-var answers = ["a","a","a","a","a","a","a","a","a","a","a"];
+var answers = ["","","","","","","","","","",""];
 var questions = ["question1","question2","question3","question4","question5","question6","question7","question8","question9","question10","question11","question12"];
 
 function startGratiton() {
@@ -104,7 +104,7 @@ Object.defineProperty(Array.prototype, 'asyncForEach', {
   }
 });
 async function madlib() {
-    const delay = 10;
+    const delay = 20;
     let text = "Hello user of Gratition, whose name I see is |" +  answers[0] + "|! Today you were feeling |" + answers[1]  + "|. After waking up you managed to accomplish |" + answers[2] + "| which made you |" + answers[3] + "| happy. The most notable thing that you completed today was |" + answers[4] + "| which was very impressive considering you got |" + answers[5] + "| of sleep after going to bed |" + answers[6] + "| last night. Today may have been a bit stressful due to |" + answers[7] + "| that made you lose track of time, but you got through it! Overall, you were so |" + answers[8] + "| today, but tomorrow is a new day! When you go to sleep you want to feel |" + answers[9] + "| and after taking time for yourself at |" + answers[10] + "| , you definitely deserve to feel that way! Thank you for using Gratition!";
     if(charCounter <= text.length) {
     const element = document.getElementById('madlib');
