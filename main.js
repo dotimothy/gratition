@@ -6,6 +6,8 @@ var questions = ["question1","question2","question3","question4","question5","qu
 function startGratiton() {
 //separate function for transitions
   transition("Welcome","question1");
+  var msg = new SpeechSynthesisUtterance('test');
+  window.speechSynthesis.speak(msg);
 }
 
 function q1() {
