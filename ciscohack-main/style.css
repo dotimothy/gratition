@@ -29,8 +29,7 @@ button {
 
 #question1.clicked, #question2.clicked, #question3.clicked, #question4.clicked {
   display:none;
-}
- 
+} 
 
 .label {
   padding: 5px;
