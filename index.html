@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!--Gratition Authors-->
 <!--Timothy Do-->
 <!--Jason Vu-->
@@ -14,7 +14,11 @@
 
 <head>
   <title> Gratition: The Efficient Virtual Scheduler</title>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> <!--free, open source CSS 
+    framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.-->
 
 </head>
 
@@ -22,136 +26,132 @@
 
 <div id="interface">
 
-<div id="Welcome">
-    <h1>Welcome to Gratition!</h1>
-    <button onclick="startGratiton()">Start Gratition</button>
+<div id="Welcome"> 
+  <div class="box" style="padding: 0; padding-right: 20px;">
+  <div class="columns">
+    <div class="column is-4 has-background-primary"
+      style="border-top-left-radius: 1px; border-radius: 10px"> <!--Will collapse tabs when screen is less than 768px in width-->
+      <h1 class="title is-5 has-text-white">Welcome to Gratition!</h1> 
+    </div>
+    <div class="column is-8">
+      <div class="field">
+        <label class="label">Brought to you by the authors...</label>
+        <div class="control"> 
+          <button class="button is-medium is-success" onclick="startGratiton()">Start Gratition</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+  </div>
 </div>
 
-    <div id="question1" class="question">
+    <div id="question1" class="question box">
       <h2>Question 1: What Is Your Full Name?</h2>
       <label class="label"></label>
-      <input id="answer1" class="saq"></input>
+      <input id="answer1" class="input saq"></input>
       <br><br>
-      <button onclick="q1()">Submit</button>
+      <button class="button is-medium is-success" onclick="q1()">Submit</button>
     </div>
 
-    <div id="question2" class="question">
+    <div id="question2" class="question box">
       <h2> Question 2: How are you feeling today? </h2>
-      <label class="label">A. Happy 😊</label>
-      <input type="radio" name="choice" value="happy 😊" id="mcq2a" class="mcq" onclick="q2a('happy 😊')"></input><br><br>
-      <label class="label">B. Sad 😔</label>
-      <input type="radio" name="choice" value="sad 😔" id="mcq2b" class="mcq" onclick="q2a('sad 😔')"></input><br><br>
-      <label class="label">C. Angry 😡</label>
-      <input type="radio" name="choice" value="angry 😡" id="mcq2c" class="mcq" onclick="q2a('angry 😡')"></input><br><br>
-      <label class="label">D. Meh 😕</label>
-      <input type="radio" name="choice" value="meh 😕" id="mcq2d" class="mcq" onclick="q2a('meh 😕')"></input><br><br>
-      <button onclick="q2b()"/>Submit</button>
+      <div class="box"> 
+        <input class="radio" name="choice" value="A. Happy 😊" id="mcq2a" class="mcq" onclick="q2a('happy 😊')"></input><br><br>
+        <input class="radio" name="choice" value="B. Sad 😔" id="mcq2b" class="mcq" onclick="q2a('sad 😔')"></input><br><br>
+        <input class="radio" name="choice" value="C. Angry 😡" id="mcq2c" class="mcq" onclick="q2a('angry 😡')"></input><br><br>
+        <input class="radio" value="D. Meh 😕" id="mcq2d" class="mcq" onclick="q2a('meh 😕')"></input><br><br>
+        <button class="button is-medium is-success" onclick="q2b()"/>Submit</button>
+      </div>
     </div>
 
-    <div id="question3" class="question">
-      <h2>Question 3: What Did I Accomplish Since Waking Up?</h2>
+    <div id="question3" class="question box">
+      <h2>Question 3: What Did You Accomplish Since Waking Up?</h2>
       <label class="label"></label>
-      <input id="answer3" class="saq"></input>
+      <input id="answer3" class="input saq"></input>
       <br><br>
-      <button onclick="q3()">Submit</button>
+      <button class="button is-medium is-success" onclick="q3()">Submit</button>
     </div>
 
-    <div id="question4" class="question">
-      <h2> Question 4: Did these accomplishments make you happy? </h2>
-      <label class="label">A. Super</label>
-      <input type="radio" name="choice" value="super" id="mcq4a" class="mcq" onclick="q4a('super')"></input><br><br>
-      <label class="label">B. Somewhat</label>
-      <input type="radio" name="choice" value="somewhat" id="mcq4b" class="mcq" onclick="q4a('somewhat')"></input><br><br>
-      <label class="label">C. Not Really</label>
-      <input type="radio" name="choice" value="not really" id="mcq4c" class="mcq" onclick="q4a('not really')"></input><br><br>
-      <label class="label">D. Not at All</label>
-      <input type="radio" name="choice" value="not at all" id="mcq4d" class="mcq" onclick="q4a('not at all')"></input><br><br>
-      <button onclick="q4b()"/>Submit</button>
+    <div id="question4" class="question box">
+      <h2> Question 4: Did these accomplishments make you happy? </h2> 
+      <input class="radio" name="choice" value="A. Super" id="mcq4a" class="mcq" onclick="q4a('super')"></input><br><br>
+      <input class="radio" name="choice" value="B. Somewhat" id="mcq4b" class="mcq" onclick="q4a('somewhat')"></input><br><br>
+      <input class="radio" name="choice" value="C. Not Really" id="mcq4c" class="mcq" onclick="q4a('not really')"></input><br><br>
+      <input class="radio" name="choice" value="D. Not At All" id="mcq4d" class="mcq" onclick="q4a('not at all')"></input><br><br>
+      <button class="button is-medium is-success" onclick="q4b()"/>Submit</button>
     </div>
 
-    <div id="question5" class="question">
-      <h2>Question 5: Name One Thing You Would Like to Complete Today: </h2>
+    <div id="question5" class="question box">
+      <h2>Question 5: Name One Thing You Would Like to Complete Today: </h2> 
+      <input id="answer5" class="input saq"></input><br><br>
+      <button class="button is-medium is-success" onclick="q5()">Submit</button>
+    </div>
+
+    <div id="question6" class="question box">
+      <h2> Question 6: How Many Hours of Sleep Did You Get Last Night?</h2> 
+      <input class="radio" name="choice" value="A. 10+ hours" id="mcq6a" class="mcq" onclick="q6a('10+ hours')"></input><br><br>
+      <input class="radio" name="choice" value="B. 7-9 Hours" id="mcq6b" class="mcq" onclick="q6a('7-9 hours')"></input><br><br>
+      <input class="radio" name="choice" value="C. 5-6 Hours" id="mcq6c" class="mcq" onclick="q6a('5-6 hours')"></input><br><br>
+      <input class="radio" name="choice" value="D. Less than 4 hours" id="mcq6d" class="mcq" onclick="q6a('less than 4 hours')"></input><br><br>
+      <button class="button is-medium is-success" onclick="q6b()"/>Submit</button>
+    </div>
+
+    <div id="question7" class="question box">
+      <h2> Question 7: What Time Did You Go to Bed Last Night?</h2> 
+      <input class="radio" name="choice" value="A. 8 PM - 9 PM" id="mcq7a" class="mcq" onclick="q7a('at around 8 PM - 9 PM')"></input><br><br>
+      <input class="radio" name="choice" value="B. 10 PM - 11 PM" id="mcq7b" class="mcq" onclick="q7a('at around 10 PM - 11 PM')"></input><br><br>
+      <input class="radio" name="choice" value="C. 11 PM - 12 AM" id="mcq7c" class="mcq" onclick="q7a('at around 11 PM - 12 AM')"></input><br><br>
+      <input class="radio" name="choice" value="D. past 12 AM" id="mcq7d" class="mcq" onclick="q7a('past 12 AM')"></input><br><br>
+      <button class="button is-medium is-success" onclick="q7b()"/>Submit</button>
+    </div>
+
+    <div id="question8" class="question box">
+      <h2> Question 8: What Made You Lose Track of Time Today?</h2> 
+      <input class="radio" name="choice" value="A. Inner Turmoil" id="mcq8a" class="mcq" onclick="q8a('inner turmoil')"></input><br><br>
+      <input class="radio" name="choice" value="B. Environmental Distractions" id="mcq8b" class="mcq" onclick="q8a('environmental distractions')"></input><br><br>
+      <input class="radio" name="choice" value="C. Procrastination" id="mcq8c" class="mcq" onclick="q8a('procrastination')"></input><br><br>
+      <input class="radio" name="choice" value="D. Current Events" id="mcq8d" class="mcq" onclick="q8a('current events')"></input><br><br>
+      <button class="button is-medium is-success" onclick="q8b()"/>Submit</button>
+    </div>
+
+    <div id="question9" class="question box">
+      <h2>Question 9: Fill in the Blank: Today I was so "______"</h2>
       <label class="label"></label>
-      <input id="answer5" class="saq"></input>
+      <input id="answer9" class="input saq"></input>
       <br><br>
-      <button onclick="q5()">Submit</button>
+      <button class="button is-medium is-success" onclick="q9()">Submit</button>
     </div>
 
-    <div id="question6" class="question">
-      <h2> Question 6: How Many Hours of Sleep Did You Get Last Night?</h2>
-      <label class="label">A. 10+ Hours</label>
-      <input type="radio" name="choice" value="10+ hours" id="mcq6a" class="mcq" onclick="q6a('10+ hours')"></input><br><br>
-      <label class="label">B. 7-9 Hours</label>
-      <input type="radio" name="choice" value="7-9 Hours" id="mcq6b" class="mcq" onclick="q6a('7-9 hours')"></input><br><br>
-      <label class="label">C. 5-6 Hours</label>
-      <input type="radio" name="choice" value="5-6 Hours" id="mcq6c" class="mcq" onclick="q6a('5-6 hours')"></input><br><br>
-      <label class="label">D. Less than 4 Hours</label>
-      <input type="radio" name="choice" value="less than 4 hours" id="mcq6d" class="mcq" onclick="q6a('less than 4 hours')"></input><br><br>
-      <button onclick="q6b()"/>Submit</button>
+    <div id="question10" class="question box">
+      <h2>Question 10: When I go to sleep, I want to feel "_______"</h2>
+      <label class="label"></label>
+      <input id="answer10" class="input saq"></input>
+      <br><br>
+      <button class="button is-medium is-success" onclick="q10()">Submit</button>
     </div>
 
-    <div id="question7" class="question">
-      <h2> Question 7: What Time Did You Go to Bed Last Night?</h2>
-      <label class="label">A. 8 PM - 9 PM</label>
-      <input type="radio" name="choice" value="8 PM - 9 PM" id="mcq7a" class="mcq" onclick="q7a('at around 8 PM - 9 PM')"></input><br><br>
-      <label class="label">B. 10 PM - 11 PM</label>
-      <input type="radio" name="choice" value="10 PM - 11 PM" id="mcq7b" class="mcq" onclick="q7a('at around 10 PM - 11 PM')"></input><br><br>
-      <label class="label">C. 11 PM - 12 AM</label>
-      <input type="radio" name="choice" value="11 PM - 12 AM" id="mcq7c" class="mcq" onclick="q7a('at around 11 PM - 12 AM')"></input><br><br>
-      <label class="label">D. Past 12 AM</label>
-      <input type="radio" name="choice" value="past 12 AM" id="mcq7d" class="mcq" onclick="q7a('past 12 AM')"></input><br><br>
-      <button onclick="q7b()"/>Submit</button>
+    <div id="question11" class="question box">
+      <h2>Question 11: When Time Are You Free Today? (Please Indicate Hour and AM/PM)</h2>
+      <label class="label"></label>
+      <input id="answer11" class="input saq"></input>
+      <br><br>
+      <button class="btn button is-medium is-success" onclick="q11()">Submit</button>
     </div>
 
-    <div id="question8" class="question">
-      <h2> Question 8: What Made You Lose Track of Time Today?</h2>
-      <label class="label">A. Inner Turmoil</label>
-      <input type="radio" name="choice" value="inner turmoil" id="mcq8a" class="mcq" onclick="q8a('inner turmoil')"></input><br><br>
-      <label class="label">B. Environmental Distractions</label>
-      <input type="radio" name="choice" value="environmental distractions" id="mcq8b" class="mcq" onclick="q8a('environmental distractions')"></input><br><br>
-      <label class="label">C. Procrastination</label>
-      <input type="radio" name="choice" value="procrastination" id="mcq8c" class="mcq" onclick="q8a('procrastination')"></input><br><br>
-      <label class="label">D. Current Events</label>
-      <input type="radio" name="choice" value="current events" id="mcq8d" class="mcq" onclick="q8a('current events')"></input><br><br>
-      <button onclick="q8b()"/>Submit</button>
+    <div id="result">
+      <div id="madlib">
+
+      </div>
+      <a href="index.html"><h2>Start a New Gratition</h2></a>
     </div>
-
-      <div id="question9" class="question">
-        <h2>Question 9: Fill in the Blank: Today I was so "______"</h2>
-        <label class="label"></label>
-        <input id="answer9" class="saq"></input>
-        <br><br>
-        <button onclick="q9()">Submit</button>
-      </div>
-
-      <div id="question10" class="question">
-        <h2>Question 10: When I go to sleep, I want to feel "_______"</h2>
-        <label class="label"></label>
-        <input id="answer10" class="saq"></input>
-        <br><br>
-        <button onclick="q10()">Submit</button>
-      </div>
-
-      <div id="question11" class="question">
-        <h2>Question 11: When Time Are You Free Today? (Please Indicate Hour and AM/PM)</h2>
-        <label class="label"></label>
-        <input id="answer11" class="saq"></input>
-        <br><br>
-        <button onclick="q11()">Submit</button>
-      </div>
-
-      <div id="result">
-        <div id="madlib">
-
-        </div>
-        <a href="index.html"><h2>Start a New Gratition</h2></a>
-      </div>
 
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+  <script src="main.js"></script>
 
 </body>
 
 
-<script src="main.js"></script>
 
 </html>

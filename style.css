@@ -17,7 +17,7 @@ h2 {
 button {
   font-size: 1.25em;
 }
-
+  
 #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #result {
   display:none;
 }
@@ -30,10 +30,7 @@ button {
 #question1.clicked, #question2.clicked, #question3.clicked, #question4.clicked {
   display:none;
 }
-
-.question {
-  padding: 10px;
-}
+ 
 
 .label {
   padding: 5px;
