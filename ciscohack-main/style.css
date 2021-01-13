@@ -1,0 +1,50 @@
+* {
+  font-family: sans-serif;
+}
+
+#interface {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  position:relative;
+  padding: 15% 0;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+button {
+  font-size: 1.25em;
+}
+  
+#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #result {
+  display:none;
+}
+
+#madlib {
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+
+#question1.clicked, #question2.clicked, #question3.clicked, #question4.clicked {
+  display:none;
+}
+ 
+
+.label {
+  padding: 5px;
+  font-size: 2.5rem;
+  line-height: 10px;
+}
+
+.saq {
+  font-size: 24px;
+}
+
+.mcq {
+  transform: scale(1.6);
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
