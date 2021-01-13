@@ -19,6 +19,7 @@ function speakText(outputText) {
     msg.pitch = 1.25;
     msg.rate = 1;
     window.speechSynthesis.speak(msg);
+}
 
 function q1() {
   var input = document.getElementById("answer1").value;
@@ -157,8 +158,3 @@ function transition(element1,element2) {
   document.getElementById(element1).style.display = 'none';
   document.getElementById(element2).style.display = 'block'; 
 }
-
-
-
-
-
