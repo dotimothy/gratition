@@ -14,7 +14,7 @@ function startGratiton() {
 
 function speakText(outputText) {    
     var msg = new SpeechSynthesisUtterance(outputText);
-    msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name === "Google US English"; })[0];
+    msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name === "Google UK English Male"; })[0];
     msg.pitch = 1.25;
     msg.rate = 1;
     window.speechSynthesis.speak(msg);
