@@ -3,7 +3,7 @@ var questions = ["question1","question2","question3","question4","question5","qu
 
 var on = true;
 function mute() {
-  if(on) {
+  if(on == true) {
       window.speechSynthesis.cancel();
       window.speechSynthesis.pause();
       on = false;
