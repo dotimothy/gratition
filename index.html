@@ -26,13 +26,13 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gratition: The Efficient Virtual Scheduler">
     <meta property="og:url" content="https://dotimothy.github.io/ciscohack">
-    <meta property="og:image" content="https://dotimothy.github.io/ciscohack/logo.png">
+    <meta property="og:image" content="https://dotimothy.github.io/ciscohack/images/logo.png">
     <meta property="og:description" content="Gratition: The Efficient Virtual Scheduler">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./logo.png"/>
+    <link rel="icon" href="images/logo.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> <!--free, open source CSS
       framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.-->
   </head>
@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-        <img class="spin" id="rainbow" src="rainbow.png">
+        <img class="spin" id="rainbow" src="images/rainbow.png">
       </div>
 
       <div id="question1">
@@ -68,7 +68,7 @@
           <button class="button is-medium is-success" onclick="q1()">Next</button>
           <button class="button is-medium is-success" onclick="transition('question1','Welcome')">Back</button>
         </div>
-        <img src="name.png">
+        <img src="images/name.png" style="display:block; margin:auto;">
       </div>
 
       <div id="question2">
@@ -86,23 +86,27 @@
         </div>
         <br>
       <div class="emoji">
-        <img class="emospin" src="happy.png">
-        <img class="emospin" src="sad.png">
-        <img class="emospin" src="angry.png">
-        <img class="emospin" src="meh.png">
+        <img class="emospin" src="images/happy.png">
+        <img class="emospin" src="images/sad.png">
+        <img class="emospin" src="images/angry.png">
+        <img class="emospin" src="images/meh.png">
       </div>
       </div>
 
-      <div id="question3" class="question box">
-        <h2>Question 3: What Did You Accomplish Since Waking Up?</h2>
-        <label class="label"></label>
-        <input id="answer3" class="input saq">
-        <br><br>
-        <button class="button is-medium is-success" onclick="q3()">Next</button>
-        <button class="button is-medium is-success" onclick="transition('question3','question2')">Back</button>
+      <div id="question3">
+        <div class="question box">
+          <h2>Question 3: What Did You Accomplish Since Waking Up?</h2>
+          <label class="label"></label>
+          <input id="answer3" class="input saq">
+          <br><br>
+          <button class="button is-medium is-success" onclick="q3()">Next</button>
+          <button class="button is-medium is-success" onclick="transition('question3','question2')">Back</button>
+        </div>
+        <img src="images/lightbulb.gif" width=35% style="display:block; margin:auto; padding:5% 0;">
       </div>
 
-      <div id="question4" class="question box">
+      <div id="question4">
+        <div class="question box">
         <h2> Question 4: Did these accomplishments make you happy? </h2>
         <br>
         <div class="box">
@@ -114,70 +118,101 @@
           <button class="button is-medium is-success" onclick="transition('question4','question3')">Back</button>
         </div>
       </div>
-
-      <div id="question5" class="question box">
-        <h2>Question 5: Name One Thing You Would Like to Complete Today: </h2>
-        <label class="label"></label>
-        <input id="answer5" class="input saq"><br><br>
-        <button class="button is-medium is-success" onclick="q5()">Next</button>
-        <button class="button is-medium is-success" onclick="transition('question5','question4')">Back</button>
+      <img class="emoand" src="images/happy.png" width=15% style="display:block; margin:auto; padding: 5% 0;">
       </div>
 
-      <div id="question6" class="question box">
-        <h2> Question 6: How Many Hours of Sleep Did You Get Last Night?</h2>
-        <br>
-        <div class="box">
-          <input class="radio" value="A. 10+ hours" id="mcq6a" class="mcq" onclick="q6a('10+ hours')" readonly><br><br>
-          <input class="radio" value="B. 7-9 Hours" id="mcq6b" class="mcq" onclick="q6a('7-9 hours')" readonly><br><br>
-          <input class="radio" value="C. 5-6 Hours" id="mcq6c" class="mcq" onclick="q6a('5-6 hours')" readonly><br><br>
-          <input class="radio" value="D. Less than 4 hours" id="mcq6d" class="mcq" onclick="q6a('less than 4 hours')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q6b()"/>Next</button>
-          <button class="button is-medium is-success" onclick="transition('question6','question5')">Back</button>
+      <div id="question5">
+        <div class="question box">
+          <h2>Question 5: Name One Thing You Would Like to Complete Today: </h2>
+          <label class="label"></label>
+          <input id="answer5" class="input saq"><br><br>
+          <button class="button is-medium is-success" onclick="q5()">Next</button>
+          <button class="button is-medium is-success" onclick="transition('question5','question4')">Back</button>
         </div>
+        <img src="images/checkbox.gif" style="display:block; margin:auto; padding: 5% 0;">
       </div>
 
-      <div id="question7" class="question box">
+      <div id="question6">
+        <div class="question box">
+          <h2> Question 6: How Many Hours of Sleep Did You Get Last Night?</h2>
+          <br>
+          <div class="box">
+            <input class="radio" value="A. 10+ hours" id="mcq6a" class="mcq" onclick="q6a('10+ hours')" readonly><br><br>
+            <input class="radio" value="B. 7-9 Hours" id="mcq6b" class="mcq" onclick="q6a('7-9 hours')" readonly><br><br>
+            <input class="radio" value="C. 5-6 Hours" id="mcq6c" class="mcq" onclick="q6a('5-6 hours')" readonly><br><br>
+            <input class="radio" value="D. Less than 4 hours" id="mcq6d" class="mcq" onclick="q6a('less than 4 hours')" readonly><br><br>
+            <button class="button is-medium is-success" onclick="q6b()"/>Next</button>
+            <button class="button is-medium is-success" onclick="transition('question6','question5')">Back</button>
+          </div>
+        </div>
+        <img src="images/alarmclock.png" style="padding: 5% 0;" class="emoji clockspin">
+      </div>
+
+      <div id="question7">
+        <div class="question box">
         <h2> Question 7: What Time Did You Go to Bed Last Night?</h2>
         <br>
-        <div class="box">
-          <input class="radio" value="A. 8 PM - 9 PM" id="mcq7a" class="mcq" onclick="q7a('at around 8 PM - 9 PM')" readonly><br><br>
-          <input class="radio" value="B. 10 PM - 11 PM" id="mcq7b" class="mcq" onclick="q7a('at around 10 PM - 11 PM')" readonly><br><br>
-          <input class="radio" value="C. 11 PM - 12 AM" id="mcq7c" class="mcq" onclick="q7a('at around 11 PM - 12 AM')" readonly><br><br>
-          <input class="radio" value="D. past 12 AM" id="mcq7d" class="mcq" onclick="q7a('past 12 AM')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q7b()"/>Next</button>
-          <button class="button is-medium is-success" onclick="transition('question7','question6')">Back</button>
+          <div class="box">
+            <input class="radio" value="A. 8 PM - 9 PM" id="mcq7a" class="mcq" onclick="q7a('at around 8 PM - 9 PM')" readonly><br><br>
+            <input class="radio" value="B. 10 PM - 11 PM" id="mcq7b" class="mcq" onclick="q7a('at around 10 PM - 11 PM')" readonly><br><br>
+            <input class="radio" value="C. 11 PM - 12 AM" id="mcq7c" class="mcq" onclick="q7a('at around 11 PM - 12 AM')" readonly><br><br>
+            <input class="radio" value="D. past 12 AM" id="mcq7d" class="mcq" onclick="q7a('past 12 AM')" readonly><br><br>
+            <button class="button is-medium is-success" onclick="q7b()"/>Next</button>
+            <button class="button is-medium is-success" onclick="transition('question7','question6')">Back</button>
+          </div>
+        </div>
+        <img width=15% src="images/sleep.png" style="padding: 5% 0;" class="emoji sleep">
+      </div>
+
+      <div id="question8">
+        <div class="question box">
+          <h2> Question 8: What Made You Lose Track of Time Today?</h2>
+          <br>
+          <div class="box">
+            <input class="radio" value="A. Self Conflict" id="mcq8a" class="mcq" onclick="q8a('self conflict')" readonly><br><br>
+            <input class="radio" value="B. A Relationship" id="mcq8b" class="mcq" onclick="q8a('a relationship')" readonly><br><br>
+            <input class="radio" value="C. Procrastination" id="mcq8c" class="mcq" onclick="q8a('procrastination')" readonly><br><br>
+            <input class="radio" value="D. Current Events" id="mcq8d" class="mcq" onclick="q8a('current events')" readonly><br><br>
+            <button class="button is-medium is-success" onclick="q8b()"/>Next</button>
+            <button class="button is-medium is-success" onclick="transition('question8','question7')">Back</button>
+          </div>
+        </div>
+        <img src="images/stress.png" style="padding: 5% 0;" class="emoji stress">
+      </div>
+
+      <div id="question9">
+        <div class="question box">
+          <h2>Question 9: Fill in the Blank: Today I was so "______"</h2>
+          <label class="label"></label>
+          <input id="answer9" class="input saq">
+          <br><br>
+          <button class="button is-medium is-success" onclick="q9()">Next</button>
+          <button class="button is-medium is-success" onclick="transition('question9','question8')">Back</button>
+        </div>
+        <div class="emoji">
+          <img src="images/happy.png">
+          <img src="images/sad.png">
+          <img src="images/woozy.png">
+          <img src="images/anxious.png">
+          <img src="images/yawn.png">
         </div>
       </div>
 
-      <div id="question8" class="question box">
-        <h2> Question 8: What Made You Lose Track of Time Today?</h2>
-        <br>
-        <div class="box">
-          <input class="radio" value="A. Inner Turmoil" id="mcq8a" class="mcq" onclick="q8a('inner turmoil')" readonly><br><br>
-          <input class="radio" value="B. Environmental Distractions" id="mcq8b" class="mcq" onclick="q8a('environmental distractions')" readonly><br><br>
-          <input class="radio" value="C. Procrastination" id="mcq8c" class="mcq" onclick="q8a('procrastination')" readonly><br><br>
-          <input class="radio" value="D. Current Events" id="mcq8d" class="mcq" onclick="q8a('current events')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q8b()"/>Next</button>
-          <button class="button is-medium is-success" onclick="transition('question8','question7')">Back</button>
+      <div id="question10">
+        <div class="question box">
+          <h2>Question 10: When I go to sleep, I want to feel "_______"</h2>
+          <label class="label"></label>
+          <input id="answer10" class="input saq">
+          <br><br>
+          <button class="button is-medium is-success" onclick="q10()">Next</button>
+          <button class="button is-medium is-success" onclick="transition('question10','question9')">Back</button>
         </div>
-      </div>
-
-      <div id="question9" class="question box">
-        <h2>Question 9: Fill in the Blank: Today I was so "______"</h2>
-        <label class="label"></label>
-        <input id="answer9" class="input saq">
-        <br><br>
-        <button class="button is-medium is-success" onclick="q9()">Next</button>
-        <button class="button is-medium is-success" onclick="transition('question9','question8')">Back</button>
-      </div>
-
-      <div id="question10" class="question box">
-        <h2>Question 10: When I go to sleep, I want to feel "_______"</h2>
-        <label class="label"></label>
-        <input id="answer10" class="input saq">
-        <br><br>
-        <button class="button is-medium is-success" onclick="q10()">Next</button>
-        <button class="button is-medium is-success" onclick="transition('question10','question9')">Back</button>
+        <div style="display:block; margin: auto;">
+          <img width=15% src="images/sleep.png" class="emoji sleep">
+        </div>
+        <div style="margin-left:10%;">
+          <img width=40% src="images/bed.png">
+        </div>
       </div>
 
       <!--regex pattern="^(1[0-2]|0?[1-9]):([0-5]?[0-9])(●? [AP]M)?$-->
@@ -204,6 +239,7 @@
 
     <footer>
       <h2 style="font-family:sans-serif">View the <a href="https://github.com/dotimothy/ciscohack">Github Repo</a></h2>
+      <h1 style="font-size:2em" onclick="mute()">🔇</h1>
     </footer>
 
   </body>

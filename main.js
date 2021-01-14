@@ -4,15 +4,25 @@ speechSynthesis.getVoices().forEach(function(voice) {
   console.log(voice.name, voice.default ? voice.default :"");
 });
 
+var on = true;
+function mute() {
+  if(on) {
+      window.speechSynthesis.pause();
+  }
+  else {
+    window.speechSynthesis.resume();
+  }
+}
+
 function startGratiton() {
 //separate function for transitions
   transition("Welcome","question1");
   speakText("What is your full name?");
 }
- 
+
 // For now, it's the female Google voice but can make it adjustable per user settings soon!
 
-function speakText(outputText) {    
+function speakText(outputText) {
     var msg = new SpeechSynthesisUtterance(outputText);
     msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name === "Google UK English Male"; })[0];
     msg.pitch = 1.25;
@@ -116,19 +126,19 @@ Object.defineProperty(Array.prototype, "asyncForEach", {
   }
 });
 
-async function madlib() { 
+async function madlib() {
     var element = document.getElementById("madlib");
     var delay = 50;
     var speakMessage = `Hello |${answers[0]}|! Today you were feeling |${answers[1]}|. After waking up you managed to accomplish |${answers[2]}| which made you |${answers[3]}| happy. The most notable thing that you completed today was |${answers[4]}|, `;
-    speakMessage += `which was very impressive considering you got |${answers[5]}| of sleep after going to bed at |${answers[6]}| last night. Today may have been a bit stressful due to |${answers[7]}| that made you lose track of time, but you got through it! Overall, you were so |${answers[8]}| `; 
+    speakMessage += `which was very impressive considering you got |${answers[5]}| of sleep after going to bed at |${answers[6]}| last night. Today may have been a bit stressful due to |${answers[7]}| that made you lose track of time, but you got through it! Overall, you were so |${answers[8]}| `;
     speakMessage += `today, but tomorrow is a new day! When you go to sleep you want to feel |${answers[9]}| and after taking time for yourself at |${answers[10]}|, you definitely deserve to feel that way! Thank you for using Gratition, and enjoy the rest of your day!`;
-    speakText(speakMessage); 
+    speakText(speakMessage);
 
     // so here I used template literals instead of concatenating variables and string with double quotes which can be messy.
     // appends string values to "speakMessage" var and web api will speak the message right away
-    // detects words to be bolded just by scanning the "|" around them 
+    // detects words to be bolded just by scanning the "|" around them
 
-    var charCounter = 0; 
+    var charCounter = 0;
 
     if(charCounter <= speakMessage.length) {
       async function sleep(ms) {
@@ -154,7 +164,7 @@ async function madlib() {
             await typeBold(element, substring);
         }
       });
-    } 
+    }
 }
 
 function transition(outElement,inElement) {

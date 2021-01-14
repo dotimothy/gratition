@@ -95,7 +95,11 @@ footer {
 }
 
 .spin {
-  animation: rotation 1s infinite linear;
+  animation: rotation 0.5s infinite linear;
+}
+
+.stress {
+  animation: rotation 1.5s infinite linear
 }
 
 @keyframes rotation {
@@ -110,12 +114,18 @@ footer {
 .emoji {
   font-size: 4em;
   margin:auto;
+  display:block;
   text-align:center;
 }
 
 .emospin {
   animation: tilt 2s infinite linear;
 }
+
+.clockspin {
+  animation: tilt 0.5s infinite linear;
+}
+
 
 @keyframes tilt {
   0% {
@@ -127,5 +137,36 @@ footer {
   100% {
     transform: rotate(-45deg);
   }
+}
 
+.emoand {
+  animation: expand 2s infinite linear;
+}
+
+.sleep {
+  animation: grow 1s infinite linear;
+}
+
+@keyframes expand {
+  0% {
+    width: 15%;
+  }
+  50% {
+    width: 35%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 15%;
+  }
+  85% {
+    width: 30%;
+  }
+  100% {
+    width: 30%
+  }
 }
