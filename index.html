@@ -9,7 +9,7 @@
 
 <!-- notes
 //today: questions / layout
-//submit inside user box and > array of answers
+//Next inside user box and > array of answers
 //UI adjustments after
 -->
 
@@ -63,7 +63,8 @@
         <label class="label"></label>
         <input id="answer1" class="input saq">
         <br><br>
-        <button class="button is-medium is-success" onclick="q1()">Submit</button>
+        <button class="button is-medium is-success" onclick="q1()">Next</button>
+        <button class="button is-medium is-success" onclick="transition('question1','Welcome')">Back</button>
       </div>
 
       <div id="question2" class="question box">
@@ -73,7 +74,8 @@
           <input class="radio" value="B. Sad 😔" id="mcq2b" class="mcq" onclick="q2a('sad 😔')" readonly><br><br>
           <input class="radio" value="C. Angry 😡" id="mcq2c" class="mcq" onclick="q2a('angry 😡')" readonly><br><br>
           <input class="radio" value="D. Meh 😕" id="mcq2d" class="mcq" onclick="q2a('meh 😕')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q2b()"/>Submit</button>
+          <button class="button is-medium is-success" onclick="q2b()"/>Next</button>
+          <button class="button is-medium is-success" onclick="transition('question2','question1')">Back</button>
         </div>
       </div>
 
@@ -82,7 +84,8 @@
         <label class="label"></label>
         <input id="answer3" class="input saq">
         <br><br>
-        <button class="button is-medium is-success" onclick="q3()">Submit</button>
+        <button class="button is-medium is-success" onclick="q3()">Next</button>
+        <button class="button is-medium is-success" onclick="transition('question3','question2')">Back</button>
       </div>
 
       <div id="question4" class="question box">
@@ -92,7 +95,8 @@
           <input class="radio" value="B. Somewhat" id="mcq4b" class="mcq" onclick="q4a('somewhat')" readonly><br><br>
           <input class="radio" value="C. Not Really" id="mcq4c" class="mcq" onclick="q4a('not really')" readonly><br><br>
           <input class="radio" value="D. Not At All" id="mcq4d" class="mcq" onclick="q4a('not at all')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q4b()"/>Submit</button>
+          <button class="button is-medium is-success" onclick="q4b()"/>Next</button>
+          <button class="button is-medium is-success" onclick="transition('question4','question3')">Back</button>
         </div>
       </div>
 
@@ -100,7 +104,8 @@
         <h2>Question 5: Name One Thing You Would Like to Complete Today: </h2> 
         <label class="label"></label>
         <input id="answer5" class="input saq"><br><br>
-        <button class="button is-medium is-success" onclick="q5()">Submit</button>
+        <button class="button is-medium is-success" onclick="q5()">Next</button>
+        <button class="button is-medium is-success" onclick="transition('question5','question4')">Back</button>
       </div>
 
       <div id="question6" class="question box">
@@ -110,7 +115,8 @@
           <input class="radio" value="B. 7-9 Hours" id="mcq6b" class="mcq" onclick="q6a('7-9 hours')" readonly><br><br>
           <input class="radio" value="C. 5-6 Hours" id="mcq6c" class="mcq" onclick="q6a('5-6 hours')" readonly><br><br>
           <input class="radio" value="D. Less than 4 hours" id="mcq6d" class="mcq" onclick="q6a('less than 4 hours')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q6b()"/>Submit</button>
+          <button class="button is-medium is-success" onclick="q6b()"/>Next</button>
+          <button class="button is-medium is-success" onclick="transition('question6','question5')">Back</button>
         </div>
       </div>
 
@@ -121,7 +127,8 @@
           <input class="radio" value="B. 10 PM - 11 PM" id="mcq7b" class="mcq" onclick="q7a('at around 10 PM - 11 PM')" readonly><br><br>
           <input class="radio" value="C. 11 PM - 12 AM" id="mcq7c" class="mcq" onclick="q7a('at around 11 PM - 12 AM')" readonly><br><br>
           <input class="radio" value="D. past 12 AM" id="mcq7d" class="mcq" onclick="q7a('past 12 AM')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q7b()"/>Submit</button>
+          <button class="button is-medium is-success" onclick="q7b()"/>Next</button>
+          <button class="button is-medium is-success" onclick="transition('question7','question6')">Back</button>
         </div>
       </div>
 
@@ -132,7 +139,8 @@
           <input class="radio" value="B. Environmental Distractions" id="mcq8b" class="mcq" onclick="q8a('environmental distractions')" readonly><br><br>
           <input class="radio" value="C. Procrastination" id="mcq8c" class="mcq" onclick="q8a('procrastination')" readonly><br><br>
           <input class="radio" value="D. Current Events" id="mcq8d" class="mcq" onclick="q8a('current events')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q8b()"/>Submit</button>
+          <button class="button is-medium is-success" onclick="q8b()"/>Next</button>
+          <button class="button is-medium is-success" onclick="transition('question8','question7')">Back</button>
         </div>
       </div>
 
@@ -141,7 +149,8 @@
         <label class="label"></label>
         <input id="answer9" class="input saq">
         <br><br>
-        <button class="button is-medium is-success" onclick="q9()">Submit</button>
+        <button class="button is-medium is-success" onclick="q9()">Next</button>
+        <button class="button is-medium is-success" onclick="transition('question9','question8')">Back</button>
       </div>
 
       <div id="question10" class="question box">
@@ -149,7 +158,8 @@
         <label class="label"></label>
         <input id="answer10" class="input saq">
         <br><br>
-        <button class="button is-medium is-success" onclick="q10()">Submit</button>
+        <button class="button is-medium is-success" onclick="q10()">Next</button>
+        <button class="button is-medium is-success" onclick="transition('question10','question9')">Back</button>
       </div>
       
       <!--regex pattern="^(1[0-2]|0?[1-9]):([0-5]?[0-9])(●? [AP]M)?$-->
@@ -159,6 +169,7 @@
         <input id="answer11" class="input saq"  placeholder="0:00 AM/PM">
         <br><br>
         <button class="button is-medium is-success" onclick="q11()">Submit</button>
+        <button class="button is-medium is-success" onclick="transition('question11','question10')">Back</button>
       </div>
 
       <div id="result" class="box">

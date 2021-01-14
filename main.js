@@ -157,7 +157,7 @@ async function madlib() {
     } 
 }
 
-function transition(element1,element2) {
-  document.getElementById(element1).style.display = "none";
-  document.getElementById(element2).style.display = "block"; 
+function transition(inElement,outElement) {
+  document.getElementById(inElement).style.display = "none";
+  document.getElementById(outElement).style.display = "block"; 
 }
