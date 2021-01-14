@@ -126,6 +126,25 @@ footer {
   animation: tilt 0.5s infinite linear;
 }
 
+.call {
+  animation: swag 1s infinite linear;
+}
+
+@keyframes swag {
+  0% {
+    width: 15%;
+    transform: rotate(-75deg);
+  }
+  50% {
+    width: 25%;
+    transform: rotate(30deg);
+  }
+  100% {
+    width: 15%;
+    transform: rotate(-75deg);
+  }
+
+}
 
 @keyframes tilt {
   0% {

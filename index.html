@@ -156,7 +156,7 @@
             <input class="radio" value="A. 8 PM - 9 PM" id="mcq7a" class="mcq" onclick="q7a('at around 8 PM - 9 PM')" readonly><br><br>
             <input class="radio" value="B. 10 PM - 11 PM" id="mcq7b" class="mcq" onclick="q7a('at around 10 PM - 11 PM')" readonly><br><br>
             <input class="radio" value="C. 11 PM - 12 AM" id="mcq7c" class="mcq" onclick="q7a('at around 11 PM - 12 AM')" readonly><br><br>
-            <input class="radio" value="D. past 12 AM" id="mcq7d" class="mcq" onclick="q7a('past 12 AM')" readonly><br><br>
+            <input class="radio" value="D. Past 12 AM" id="mcq7d" class="mcq" onclick="q7a('past 12 AM')" readonly><br><br>
             <button class="button is-medium is-success" onclick="q7b()"/>Next</button>
             <button class="button is-medium is-success" onclick="transition('question7','question6')">Back</button>
           </div>
@@ -216,13 +216,16 @@
       </div>
 
       <!--regex pattern="^(1[0-2]|0?[1-9]):([0-5]?[0-9])(●? [AP]M)?$-->
-      <div id="question11" class="question box">
-        <h2>Question 11: When Time Are You Free Today? (Please Indicate Hour and AM/PM)</h2>
-        <label class="label"></label>
-        <input id="answer11" class="input saq"  placeholder="0:00 AM/PM">
-        <br><br>
-        <button class="button is-medium is-success" onclick="q11()">Submit</button>
-        <button class="button is-medium is-success" onclick="transition('question11','question10')">Back</button>
+      <div id="question11">
+        <div class="question box">
+          <h2>Question 11: When Time Are You Free Today? (Please Indicate Hour and AM/PM)</h2>
+          <label class="label"></label>
+          <input id="answer11" class="input saq"  placeholder="0:00 AM/PM">
+          <br><br>
+          <button class="button is-medium is-success" onclick="q11()">Submit</button>
+          <button class="button is-medium is-success" onclick="transition('question11','question10')">Back</button>
+        </div>
+          <img src="images/call.png" style="padding: 5% 0;" class="emoji call">
       </div>
 
       <div id="result" class="box">
@@ -232,14 +235,18 @@
         <a href="index.html"><h2>Start a New Gratition</h2></a>
       </div>
 
+      <div id="party" style="display:none;">
+        <h1 style="font-size:2em">🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉</h1>
+      </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
     <script src="main.js"></script>
 
     <footer>
-      <h2 style="font-family:sans-serif">View the <a href="https://github.com/dotimothy/ciscohack">Github Repo</a></h2>
       <h1 style="font-size:2em" onclick="mute()">🔇</h1>
+      <h2 style="font-family:sans-serif">View the <a href="https://github.com/dotimothy/ciscohack">Github Repo</a></h2>
     </footer>
 
   </body>
