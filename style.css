@@ -17,7 +17,7 @@ h2 {
 button {
   font-size: 1.25em;
 }
-  
+
 #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #result {
   display:none;
 }
@@ -46,4 +46,38 @@ button {
   margin-right: 10px;
   vertical-align: middle;
   margin-top: -2px;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  animation-name: fadeout;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

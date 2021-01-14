@@ -157,7 +157,13 @@ async function madlib() {
     } 
 }
 
-function transition(inElement,outElement) {
-  document.getElementById(inElement).style.display = "none";
-  document.getElementById(outElement).style.display = "block"; 
+function transition(outElement,inElement) {
+  var inE = document.getElementById(inElement);
+  var outE = document.getElementById(outElement);
+  outE.classList.remove('fade-in');
+  outE.classList.add('fade-out');
+  outE.style.display = "none";
+  inE.classList.remove('fade-out');
+  inE.classList.add('fade-in');
+  inE.style.display = "block";
 }
