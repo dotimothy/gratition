@@ -59,26 +59,38 @@
         <img class="spin" id="rainbow" src="rainbow.png">
       </div>
 
-      <div id="question1" class="question box">
-        <h2>Question 1: What Is Your Full Name?</h2>
-        <label class="label"></label>
-        <input id="answer1" class="input saq">
-        <br><br>
-        <button class="button is-medium is-success" onclick="q1()">Next</button>
-        <button class="button is-medium is-success" onclick="transition('question1','Welcome')">Back</button>
+      <div id="question1">
+        <div class="question box">
+          <h2>Question 1: What Is Your Full Name?</h2>
+          <label class="label"></label>
+          <input id="answer1" class="input saq">
+          <br><br>
+          <button class="button is-medium is-success" onclick="q1()">Next</button>
+          <button class="button is-medium is-success" onclick="transition('question1','Welcome')">Back</button>
+        </div>
+        <img src="name.png">
       </div>
 
-      <div id="question2" class="question box">
-        <h2> Question 2: How are you feeling today? </h2>
-        <br>
-        <div class="box">
-          <input class="radio" value="A. Happy 😊" id="mcq2a" class="mcq" onclick="q2a('happy 😊')" readonly><br><br>
-          <input class="radio" value="B. Sad 😔" id="mcq2b" class="mcq" onclick="q2a('sad 😔')" readonly><br><br>
-          <input class="radio" value="C. Angry 😡" id="mcq2c" class="mcq" onclick="q2a('angry 😡')" readonly><br><br>
-          <input class="radio" value="D. Meh 😕" id="mcq2d" class="mcq" onclick="q2a('meh 😕')" readonly><br><br>
-          <button class="button is-medium is-success" onclick="q2b()"/>Next</button>
-          <button class="button is-medium is-success" onclick="transition('question2','question1')">Back</button>
+      <div id="question2">
+        <div class="question box">
+          <h2> Question 2: How are you feeling today? </h2>
+          <br>
+          <div class="box">
+            <input class="radio" value="A. Happy 😊" id="mcq2a" class="mcq" onclick="q2a('happy 😊')" readonly><br><br>
+            <input class="radio" value="B. Sad 😔" id="mcq2b" class="mcq" onclick="q2a('sad 😔')" readonly><br><br>
+            <input class="radio" value="C. Angry 😡" id="mcq2c" class="mcq" onclick="q2a('angry 😡')" readonly><br><br>
+            <input class="radio" value="D. Meh 😕" id="mcq2d" class="mcq" onclick="q2a('meh 😕')" readonly><br><br>
+            <button class="button is-medium is-success" onclick="q2b()"/>Next</button>
+            <button class="button is-medium is-success" onclick="transition('question2','question1')">Back</button>
+          </div>
         </div>
+        <br>
+      <div class="emoji">
+        <img class="emospin" src="happy.png">
+        <img class="emospin" src="sad.png">
+        <img class="emospin" src="angry.png">
+        <img class="emospin" src="meh.png">
+      </div>
       </div>
 
       <div id="question3" class="question box">
@@ -189,6 +201,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
     <script src="main.js"></script>
+
+    <footer>
+      <h2 style="font-family:sans-serif">View the <a href="https://github.com/dotimothy/ciscohack">Github Repo</a></h2>
+    </footer>
 
   </body>
 </html>

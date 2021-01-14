@@ -7,7 +7,7 @@
   width: 50%;
   height: 50%;
   position:relative;
-  padding: 10% 0;
+  padding: 5% 0;
 }
 
 h2 {
@@ -16,6 +16,11 @@ h2 {
 
 button {
   font-size: 1.25em;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
 }
 
 #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #result {
@@ -84,9 +89,9 @@ button {
 
 #rainbow {
   margin: auto;
-  width: 40%;
+  width: 35%;
   display:block;
-  padding: 15% 0;
+  padding: 10% 0;
 }
 
 .spin {
@@ -100,4 +105,27 @@ button {
   to {
     transform: rotate(360deg);
   }
+}
+
+.emoji {
+  font-size: 4em;
+  margin:auto;
+  text-align:center;
+}
+
+.emospin {
+  animation: tilt 2s infinite linear;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+
 }
