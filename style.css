@@ -7,7 +7,7 @@
   width: 50%;
   height: 50%;
   position:relative;
-  padding: 15% 0;
+  padding: 10% 0;
 }
 
 h2 {
@@ -29,7 +29,7 @@ button {
 
 #question1.clicked, #question2.clicked, #question3.clicked, #question4.clicked {
   display:none;
-} 
+}
 
 .label {
   padding: 5px;
@@ -82,15 +82,22 @@ button {
   }
 }
 
-.rotate {
-  animation: rotation 2s infinite linear;
+#rainbow {
+  margin: auto;
+  width: 40%;
+  display:block;
+  padding: 15% 0;
+}
+
+.spin {
+  animation: rotation 1s infinite linear;
 }
 
 @keyframes rotation {
   from {
-    transition: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    transition: rotate(359deg);
+    transform: rotate(360deg);
   }
 }
