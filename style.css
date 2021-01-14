@@ -34,7 +34,7 @@ button {
 .label {
   padding: 5px;
   font-size: 2.5rem;
-  line-height: 15px;
+  line-height: 10px;
 }
 
 .saq {
@@ -79,5 +79,18 @@ button {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transition: rotate(0deg);
+  }
+  to {
+    transition: rotate(359deg);
   }
 }
