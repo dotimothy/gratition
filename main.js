@@ -219,7 +219,7 @@ function theme() {
         toggle.innerHTML = "☀️";
     }
     else if(toggle.innerHTML == "☀️") {
-        page.removeAttribute('dark-theme','');
+        page.setAttribute('dark-theme','');
         toggle.innerHTML = "🌙";
     }
 }
