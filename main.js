@@ -13,7 +13,7 @@ msg.volume = volume;
 function mute() {
   volume = 1-volume;
   msg.volume = volume;
-  var mute document.getElementById("mute");
+  var mute = document.getElementById("mute");
   if(mute.innerHTML == "🔇") {
       mute.innerHTML = "🔈";
   }
