@@ -22,11 +22,10 @@ function startGratiton() {
 // For now, it's the female Google voice but can make it adjustable per user settings soon!
 
 function speakText(outputText) {
-    var msg = new SpeechSynthesisUtterance();
+    var msg = new SpeechSynthesisUtterance(outputText);
     msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name === "Google UK English Male"; })[0];
     msg.pitch = 1.25;
     msg.rate = 1;
-    msg.txt = outputText;
     window.speechSynthesis.speak(msg);
 }
 
@@ -110,12 +109,14 @@ function q10() {
   transition("question10","question11");
 }
 
-function q11() {
+async function q11() {
   var input = document.getElementById("answer11").value;
   answers[10] = input;
-  madlib();
-  setTimeout(showParty,15000);
   transition("question11","result");
+  await sleep(250);
+  await madlib();
+  showParty();
+
 }
 
 //makes async for each loop
@@ -126,6 +127,10 @@ Object.defineProperty(Array.prototype, "asyncForEach", {
     }
   }
 });
+
+async function sleep(ms) {
+  return await (new Promise(resolve => setTimeout(resolve, ms)));
+}
 
 async function madlib() {
     var element = document.getElementById("madlib");
@@ -142,9 +147,7 @@ async function madlib() {
     var charCounter = 0;
 
     if(charCounter <= speakMessage.length) {
-      async function sleep(ms) {
-        return await (new Promise(resolve => setTimeout(resolve, ms)));
-      }
+
 
       async function typeBold(targetElement, speakMessage) {
         let bolded = document.createElement("b");
@@ -155,7 +158,7 @@ async function madlib() {
         }
       }
 
-      speakMessage.split("|").asyncForEach(async (substring, index) => {
+      await speakMessage.split("|").asyncForEach(async (substring, index) => {
         if (index % 2 === 0) {
           for (let i of substring) {
             await sleep(delay);
