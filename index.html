@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dark-theme>
 <!--Gratition Authors-->
 <!--Timothy Do-->
 <!--Wilson Nguyen-->
@@ -58,7 +58,7 @@
         <img class="spin" id="rainbow" src="images/rainbow.png">
       </div>
 
-      <div id="question1">
+      <div id="question1" hidden>
         <div class="question box">
           <h2>Question 1: What Is Your Full Name?</h2>
           <label class="label"></label>
@@ -70,7 +70,7 @@
         <img src="images/name.png" style="display:block; margin:auto;">
       </div>
 
-      <div id="question2">
+      <div id="question2" hidden>
         <div class="question box">
           <h2> Question 2: How are you feeling today? </h2>
           <br>
@@ -92,7 +92,7 @@
       </div>
       </div>
 
-      <div id="question3">
+      <div id="question3" hidden>
         <div class="question box">
           <h2>Question 3: What Did You Accomplish Since Waking Up?</h2>
           <label class="label"></label>
@@ -104,7 +104,7 @@
         <img src="images/lightbulb.gif" width=35% style="display:block; margin:auto; padding:5% 0;">
       </div>
 
-      <div id="question4">
+      <div id="question4" hidden>
         <div class="question box">
         <h2> Question 4: Did these accomplishments make you happy? </h2>
         <br>
@@ -120,7 +120,7 @@
       <img class="emoand" src="images/happy.png" width=15% style="display:block; margin:auto; padding: 5% 0;">
       </div>
 
-      <div id="question5">
+      <div id="question5" hidden>
         <div class="question box">
           <h2>Question 5: Name One Thing You Would Like to Complete Today: </h2>
           <label class="label"></label>
@@ -131,7 +131,7 @@
         <img src="images/checkbox.gif" style="display:block; margin:auto; padding: 5% 0;">
       </div>
 
-      <div id="question6">
+      <div id="question6" hidden>
         <div class="question box">
           <h2> Question 6: How Many Hours of Sleep Did You Get Last Night?</h2>
           <br>
@@ -147,7 +147,7 @@
         <img src="images/alarmclock.png" style="padding: 5% 0;" class="emoji clockspin">
       </div>
 
-      <div id="question7">
+      <div id="question7" hidden>
         <div class="question box">
         <h2> Question 7: What Time Did You Go to Bed Last Night?</h2>
         <br>
@@ -163,7 +163,7 @@
         <img width=15% src="images/sleep.png" style="padding: 5% 0;" class="emoji sleep">
       </div>
 
-      <div id="question8">
+      <div id="question8" hidden>
         <div class="question box">
           <h2> Question 8: What Made You Lose Track of Time Today?</h2>
           <br>
@@ -179,7 +179,7 @@
         <img src="images/stress.png" style="padding: 5% 0;" class="emoji stress">
       </div>
 
-      <div id="question9">
+      <div id="question9" hidden>
         <div class="question box">
           <h2>Question 9: Fill in the Blank: Today I was so "______"</h2>
           <label class="label"></label>
@@ -197,7 +197,7 @@
         </div>
       </div>
 
-      <div id="question10">
+      <div id="question10" hidden>
         <div class="question box">
           <h2>Question 10: When I go to sleep, I want to feel "_______"</h2>
           <label class="label"></label>
@@ -215,7 +215,7 @@
       </div>
 
       <!--regex pattern="^(1[0-2]|0?[1-9]):([0-5]?[0-9])(●? [AP]M)?$-->
-      <div id="question11">
+      <div id="question11" hidden>
         <div class="question box">
           <h2>Question 11: When Time Are You Free Today? (Please Indicate Hour and AM/PM)</h2>
           <label class="label"></label>
@@ -227,7 +227,7 @@
           <img src="images/call.png" style="padding: 5% 0;" class="emoji call">
       </div>
 
-      <div id="result" class="box">
+      <div id="result" class="box" hidden>
           <div id="madlib" class="box">
             <!-- Text populates in here :) -->
           </div>

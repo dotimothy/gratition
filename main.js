@@ -1,17 +1,18 @@
 var answers = ["","","","","","","","","","",""];
-var questions = ["question1","question2","question3","question4","question5","question6","question7","question8","question9","question10","question11","question12"];
+var questions = ["question1","question2","question3","question4","question5","question6","question7","question8","question9","question10","question11","result"];
+var elements = ["Welcome","question1","question2","question3","question4","question5","question6","question7","question8","question9","question10","question11","result"];
+var msg = new SpeechSynthesisUtterance();
+var volume = 1;
+msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name === "Google UK English Male"; })[0];
+msg.pitch = 1.25;
+msg.rate = 1;
+msg.text = '';
+msg.volume = volume;
 
 
-var on = true;
 function mute() {
-  if(on == true) {
-      window.speechSynthesis.pause();
-      on = false;
-  }
-  else if(on == false) {
-    window.speechSynthesis.resume();
-    on = true;
-  }
+  volume = 1-volume;
+  msg.volume = volume;
 }
 
 
@@ -24,10 +25,8 @@ function startGratiton() {
 // For now, it's the female Google voice but can make it adjustable per user settings soon!
 
 function speakText(outputText) {
-    var msg = new SpeechSynthesisUtterance(outputText);
-    msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name === "Google UK English Male"; })[0];
-    msg.pitch = 1.25;
-    msg.rate = 1;
+    msg.text = outputText;
+    msg.volume = volume;
     window.speechSynthesis.speak(msg);
 }
 
@@ -115,6 +114,7 @@ async function q11() {
   var input = document.getElementById("answer11").value;
   answers[10] = input;
   transition("question11","result");
+  msg.rate = 1.5;
   await sleep(250);
   await madlib();
   showParty();
@@ -184,8 +184,9 @@ function transition(outElement,inElement) {
   var outE = document.getElementById(outElement);
   outE.classList.remove('fade-in');
   outE.classList.add('fade-out');
-  outE.style.display = "none";
+  outE.setAttribute('hidden','');
   inE.classList.remove('fade-out');
   inE.classList.add('fade-in');
-  inE.style.display = "block";
+  // inE.style.display = "block";
+  inE.removeAttribute('hidden');
 }

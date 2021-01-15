@@ -39,7 +39,7 @@ footer {
 }
 
 #question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11, #result {
-  display:none;
+  display:block;
 }
 
 #madlib {
@@ -201,6 +201,42 @@ footer {
     width: 30%;
   }
   100% {
-    width: 30%
+    width: 30%;
   }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+}
+
+html[dark-theme] * {
+  color: white;
+}
+
+html[dark-theme] body {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+html[dark-theme] input {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+html[dark-theme] .box {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.radio {
+  border: none;
+}
+
+
+[hidden] {
+  display: none !important;
+  visibility: hidden;
 }
