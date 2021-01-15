@@ -213,7 +213,7 @@ function transition(outElement,inElement) {
 
 function theme() {
     var toggle = document.getElementById("theme");
-    var page = document.getElementById("page");
+    var page = document.documentElement;
     if(toggle.innerHTML == "🌙") {
         page.removeAttribute('dark-theme','');
         toggle.innerHTML = "☀️";
