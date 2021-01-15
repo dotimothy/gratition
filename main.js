@@ -127,7 +127,7 @@ Object.defineProperty(Array.prototype, "asyncForEach", {
 
 async function madlib() {
     var element = document.getElementById("madlib");
-    var delay = 10;
+    var delay = 25;
     var speakMessage = `Hello |${answers[0]}|! Today you were feeling |${answers[1]}|. After waking up you managed to accomplish |${answers[2]}| which made you |${answers[3]}| happy. The most notable thing that you completed today was |${answers[4]}|, `;
     speakMessage += `which was very impressive considering you got |${answers[5]}| of sleep after going to bed at |${answers[6]}| last night. Today may have been a bit stressful due to |${answers[7]}| that made you lose track of time, but you got through it! Overall, you were so |${answers[8]}| `;
     speakMessage += `today, but tomorrow is a new day! When you go to sleep you want to feel |${answers[9]}| and after taking time for yourself at |${answers[10]}|, you definitely deserve to feel that way! Thank you for using Gratition, and enjoy the rest of your day!`;
