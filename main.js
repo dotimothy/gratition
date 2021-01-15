@@ -3,12 +3,17 @@ var questions = ["question1","question2","question3","question4","question5","qu
 var qc = ["What is your full name?","How are you feeling today?","What did you accomplish since waking up?","Did these accomplishments make you happy?","Name One Thing You Would Like to Complete Today.","How Many Hours of Sleep Did You Get Last Night?","What Time Did You Go to Bed Last Night?","What Made You Lose Track of Time Today?","Fill in the Blank: Today I was so...","When I go to sleep, I want to feel...","When Time Are You Free Today?"];
 var msg = new SpeechSynthesisUtterance();
 var volume = 1;
-var voices = ["Google UK English Male","Google UK English Female"];
-msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[0]; })[0];
+var voices = ["Google UK English Male","Google US English"];
+msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[0];})[0];
 msg.pitch = 1.25;
 msg.rate = 1;
 msg.text = '';
 msg.volume = volume;
+
+function start() {
+  msg.pitch = 1.25;
+  speakText("Welcome to Graation!");
+}
 
 
 function mute() {
@@ -40,11 +45,11 @@ function voice() {
   var voice = document.getElementById("voice");
   if(voice.innerHTML == "👱‍♂️") {
     voice.innerHTML = "👩";
-    msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[1]; })[0];
+    msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[1];})[0];
   }
   else {
     voice.innerHTML = "👱‍♂️";
-    msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[0]; })[0];
+    msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[0];})[0];
   }
 
 }
