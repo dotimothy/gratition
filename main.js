@@ -11,7 +11,7 @@ msg.text = '';
 msg.volume = volume;
 
 function start() {
-  msg.pitch = 1.25;
+  msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[0];})[0];
   speakText("Welcome to Graation!");
 }
 
