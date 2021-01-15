@@ -22,10 +22,11 @@ function startGratiton() {
 // For now, it's the female Google voice but can make it adjustable per user settings soon!
 
 function speakText(outputText) {
-    var msg = new SpeechSynthesisUtterance(outputText);
+    var msg = new SpeechSynthesisUtterance();
     msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name === "Google UK English Male"; })[0];
     msg.pitch = 1.25;
     msg.rate = 1;
+    msg.txt = outputText;
     window.speechSynthesis.speak(msg);
 }
 
@@ -113,6 +114,7 @@ function q11() {
   var input = document.getElementById("answer11").value;
   answers[10] = input;
   madlib();
+  setTimeout(showParty,15000);
   transition("question11","result");
 }
 
@@ -163,9 +165,6 @@ async function madlib() {
             await typeBold(element, substring);
         }
       });
-    }
-    else  {
-      showParty();
     }
 }
 
