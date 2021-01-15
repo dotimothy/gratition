@@ -206,10 +206,13 @@ function transition(outElement,inElement) {
 
 function theme() {
     var toggle = document.getElementById("theme");
+    var page = document.getElementById("page");
     if(toggle.innerHTML == "🌙") {
+        page.removeAttribute('dark-theme','');
         toggle.innerHTML = "☀️";
     }
     else if(toggle.innerHTML == "☀️") {
+        page.removeAttribute('dark-theme','');
         toggle.innerHTML = "🌙";
     }
 }
