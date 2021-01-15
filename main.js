@@ -7,7 +7,7 @@ function mute() {
       window.speechSynthesis.pause();
       on = false;
   }
-  else {
+  else if(on == false) {
     window.speechSynthesis.resume();
     on = true;
   }
