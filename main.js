@@ -203,3 +203,13 @@ function transition(outElement,inElement) {
   inE.removeAttribute('hidden');
   checkSpeech();
 }
+
+function theme() {
+    var toggle = document.getElementById("theme");
+    if(toggle.innerHTML == "🌙") {
+        toggle.innerHTML = "☀️";
+    }
+    else if(toggle.innerHTML == "☀️") {
+        toggle.innerHTML = "🌙";
+    }
+}
