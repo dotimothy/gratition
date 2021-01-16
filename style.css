@@ -277,9 +277,9 @@ html[dark-theme] .radio {
   padding-right: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 769px) {
   #Welcome .box {
-    padding: 0;
+    padding: 12px;
     padding-bottom: 20px;
   }
 }
@@ -304,4 +304,9 @@ html[dark-theme] a:hover {
 
 a:hover {
   text-decoration: underline;
+}
+
+.button {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
