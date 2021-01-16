@@ -248,6 +248,11 @@ html .box {
 
 html[dark-theme] .box {
   background-color: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+}
+
+html[dark-theme] #Welcome .has-background-primary {
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
 }
 
 .radio {
@@ -286,3 +291,10 @@ html[dark-theme] [selected] {
   opacity: 0.6;
 }
 
+html[dark-theme] a:hover {
+  color: #FFCC11;
+}
+
+a:hover {
+  text-decoration: underline;
+}
