@@ -16,7 +16,7 @@ COVID Defender: Defend your body from COVID-19 (HTML Canvas/WebGL/JS)
 
 Implement a scoreboard (Data is saved using PHP to a Web Server)
 
-Plan 2: Efficient Scheduler (Plan & manages out your day in some way): Gratition
+Plan 2: Mental Health Easer (Plan & manages out your day in some way): Gratition
 Prompts Questions on How You Start Your Day, when is your free time, and select common activities to put in schedule
 When done with the questionnaire, the schedule is created using JS.
 User can save the schedule as a png
