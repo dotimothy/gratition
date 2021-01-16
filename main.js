@@ -1,6 +1,5 @@
 var answers = ["","","","","","","","","","",""];
 var questions = ["question1","question2","question3","question4","question5","question6","question7","question8","question9","question10","question11"];
-var qc = ["What is your full name?","How are you feeling today?","What did you accomplish since waking up?","Did these accomplishments make you happy?","Name One Thing You Would Like to Complete Today.","How Many Hours of Sleep Did You Get Last Night?","What Time Did You Go to Bed Last Night?","What Made You Lose Track of Time Today?","Fill in the Blank: Today I was so...","When I go to sleep, I want to feel...","When Time Are You Free Today?"];
 var msg = new SpeechSynthesisUtterance();
 var volume = 1;
 var voices = ["Google UK English Male","Google US English"];
@@ -12,7 +11,7 @@ msg.volume = volume;
 
 function start() {
   msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[0];})[0];
-  speakText("Welcome to Graation!");
+  speakText("Welcome to Graatition!");
 }
 
 
@@ -54,23 +53,10 @@ function voice() {
 
 }
 
-function checkSpeech() {
-  var speak = 0;
-  for(var i = 0; i < questions.length; i++) {
-    var element = document.getElementById(questions[i]);
-    if(element.classList.contains("fade-in") && !(speak)) {
-      speakText(qc[i]);
-      speak = 1;
-    }
-  }
-  speak = 0;
-}
-
-
 function startGratiton() {
 //separate function for transitions
   transition("Welcome","question1");
-  //speakText("What is your full name?");
+  speakText("What is your full name?");
 }
 
 // For now, it's the female Google voice but can make it adjustable per user settings soon!
@@ -83,25 +69,29 @@ function speakText(outputText) {
 
 function q1() {
   var input = document.getElementById("answer1").value;
+  if(!input.trim()) return alert('Please answer the question :D');
   answers[0] = input;
   transition("question1","question2");
-  //speakText("How are you feeling today?");
+  speakText("How are you feeling today?");
 }
+
 
 function q2a(answer) {
   answers[1] = answer;
 }
 
 function q2b() {
+  if(!answers[1].trim()) return alert('Please answer the question :D');
   transition("question2","question3");
-  //speakText("What did you accomplish since waking up?");
+  speakText("What did you accomplish since waking up?");
 }
 
 function q3() {
   var input = document.getElementById("answer3").value;
+  if(!input.trim()) return alert('Please answer the question :D');
   answers[2] = input;
   transition("question3","question4");
-  //speakText("Did these accomplishments make you happy?");
+  speakText("Did these accomplishments make you happy?");
 }
 
 function q4a(answer) {
@@ -109,15 +99,17 @@ function q4a(answer) {
 }
 
 function q4b() {
-  //speakText("Name One Thing You Would Like to Complete Today.");
+  if(!answers[3].trim()) return alert('Please answer the question :D');
   transition("question4","question5");
+  speakText("Name One Thing You Would Like to Complete Today.");
 }
 
 function q5() {
   var input = document.getElementById("answer5").value;
+  if(!input.trim()) return alert('Please answer the question :D');
   answers[4] = input;
-  //speakText("How Many Hours of Sleep Did You Get Last Night?");
   transition("question5","question6");
+  speakText("How Many Hours of Sleep Did You Get Last Night?");
 }
 
 function q6a(answer) {
@@ -125,8 +117,9 @@ function q6a(answer) {
 }
 
 function q6b() {
-  //speakText("What Time Did You Go to Bed Last Night?");
+  if(!answers[5].trim()) return alert('Please answer the question :D');
   transition("question6","question7");
+  speakText("What Time Did You Go to Bed Last Night?");
 }
 
 function q7a(answer) {
@@ -134,8 +127,9 @@ function q7a(answer) {
 }
 
 function q7b() {
-  //speakText("What Made You Lose Track of Time Today?");
+  if(!answers[6].trim()) return alert('Please answer the question :D');
   transition("question7","question8");
+  speakText("What Made You Lose Track of Time Today?");
 }
 
 function q8a(answer) {
@@ -143,19 +137,22 @@ function q8a(answer) {
 }
 
 function q8b() {
-  //speakText("Fill in the Blank: Today I was so...");
+  if(!answers[7].trim()) return alert('Please answer the question :D');
   transition("question8","question9");
+  speakText("Fill in the Blank: Today I was so...");
 }
 
 function q9() {
   var input = document.getElementById("answer9").value;
+  if(!input.trim()) return alert('Please answer the question :D');
   answers[8] = input;
-  //speakText("When I go to sleep, I want to feel...");
   transition("question9","question10");
+  speakText("When I go to sleep, I want to feel...");
 }
 
 function q10() {
   var input = document.getElementById("answer10").value;
+  if(!input.trim()) return alert('Please answer the question :D');
   answers[9] = input;
   //speakText("When Time Are You Free Today?");
   transition("question10","question11");
@@ -163,6 +160,7 @@ function q10() {
 
 async function q11() {
   var input = document.getElementById("answer11").value;
+  if(!input.trim()) return alert('Please answer the question :D');
   answers[10] = input;
   transition("question11","result");
   msg.rate = 1.1;
@@ -188,10 +186,10 @@ async function sleep(ms) {
 async function madlib() {
     var element = document.getElementById("madlib");
     var delay = 50;
-    var speakMessage = `Hello |${answers[0]}|! Today you were feeling |${answers[1]}|. After waking up you managed to accomplish |${answers[2]}| which made you |${answers[3]}| happy. The most notable thing that you completed today was |${answers[4]}|, `;
-    speakMessage += `which was very impressive considering you got |${answers[5]}| of sleep after going to bed at |${answers[6]}| last night. Today may have been a bit stressful due to |${answers[7]}| that made you lose track of time, but you got through it! Overall, you were so |${answers[8]}| `;
-    speakMessage += `today, but tomorrow is a new day! When you go to sleep you want to feel |${answers[9]}| and after taking time for yourself at |${answers[10]}|, you definitely deserve to feel that way! Thank you for using Gratition, and enjoy the rest of your day!`;
-    var textMessage = `Hello |${answers[0]}|! Today you were feeling |${answers[1]}|. After waking up you managed to accomplish |${answers[2]}| which made you |${answers[3]}| happy. The most notable thing that you completed today was |${answers[4]}|, which was very impressive considering you got |${answers[5]}| of sleep after going to bed at |${answers[6]}| last night. Today may have been a bit stressful due to |${answers[7]}| that made you lose track of time, but you got through it! Overall, you were so |${answers[8]}|  today, but tomorrow is a new day! When you go to sleep you want to feel |${answers[9]}| and after taking time for yourself at |${answers[10]}|, you definitely deserve to feel that way! Thank you for using Graatition, and enjoy the rest of your day!`;
+    var textMessage = `Hello |${answers[0]}|! Today you were feeling |${answers[1]}|. After waking up you managed to accomplish |${answers[2]}| which made you |${answers[3]}| happy. The most notable thing that you completed today was |${answers[4]}|, `;
+    textMessage += `which was very impressive considering you got |${answers[5]}| of sleep after going to bed at |${answers[6]}| last night. Today may have been a bit stressful due to |${answers[7]}| that made you lose track of time, but you got through it! Overall, you were so |${answers[8]}| `;
+    textMessage += `today, but tomorrow is a new day! When you go to sleep you want to feel |${answers[9]}| and after taking time for yourself at |${answers[10]}|, you definitely deserve to feel that way! Thank you for using Gratition, and enjoy the rest of your day!`;
+    var speakMessage = textMessage.replace(/Gratition/g, 'Graatition').replace(/\|/g, ''); //`Hello |${answers[0]}|! Today you were feeling |${answers[1]}|. After waking up you managed to accomplish |${answers[2]}| which made you |${answers[3]}| happy. The most notable thing that you completed today was |${answers[4]}|, which was very impressive considering you got |${answers[5]}| of sleep after going to bed at |${answers[6]}| last night. Today may have been a bit stressful due to |${answers[7]}| that made you lose track of time, but you got through it! Overall, you were so |${answers[8]}|  today, but tomorrow is a new day! When you go to sleep you want to feel |${answers[9]}| and after taking time for yourself at |${answers[10]}|, you definitely deserve to feel that way! Thank you for using Graatition, and enjoy the rest of your day!`;
     speakText(speakMessage);
 
     // so here I used template literals instead of concatenating variables and string with double quotes which can be messy.
@@ -245,3 +243,12 @@ function transition(outElement,inElement) {
 }
 
 
+[...document.querySelectorAll('.box')].forEach(box => {
+  const radios = [...box.querySelectorAll('.radio')];
+  radios.forEach(radio => {
+    radio.addEventListener('click', () => {
+      radios.forEach(r => r.removeAttribute('selected'));
+      radio.setAttribute('selected', '');
+    });
+  });
+});
