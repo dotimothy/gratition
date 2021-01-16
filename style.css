@@ -21,11 +21,14 @@ button {
 footer {
   position: fixed;
   bottom: 10px;
+  left: 10px;
 }
 
 .toggle {
   opacity: 1;
   transition: opacity 0.5s;
+  cursor: pointer;
+  user-select: none;
 }
 
 .toggle:hover {
@@ -215,16 +218,32 @@ body {
   width: 100%;
 }
 
+html * {
+  transition: color 1s;
+}
+
 html[dark-theme] * {
   color: white;
+}
+
+html body {
+  transition: background-color 1s;
 }
 
 html[dark-theme] body {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+html input {
+  transition: background-color 1s;
+}
+
 html[dark-theme] input {
   background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+html .box {
+  transition: background-color 1s;
 }
 
 html[dark-theme] .box {
@@ -233,10 +252,25 @@ html[dark-theme] .box {
 
 .radio {
   border: none;
+  outline: none;
+}
+
+.radio:focus {
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+html[dark-theme] .radio {
+  color: #FFCC11;
 }
 
 
 [hidden] {
   display: none !important;
   visibility: hidden;
+}
+
+#Welcome .box {
+  padding: 0;
+  padding-right: 20px;
 }
