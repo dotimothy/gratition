@@ -1,5 +1,5 @@
 # Gratition: The Easing Web App for Mental Health
-<img src="UI.gif>
+<img src="UI.gif">
 Project Repo for Cisco Webex Hackathon 2020: Gratition
 
  Gratition is a mental easing web app that relies on HTML/CSS/ and pure Javascript. Using various prompts for the user and utilizing the Google synthesis API for real time voice messages, Gratition allows for an automated message to be said to the user concerning his or her day. In addition, Gratition has adjustable voice and lighting to appeal to the users preferences to ensure mental satisfaction throughout the app.
