@@ -277,6 +277,13 @@ html[dark-theme] .radio {
   padding-right: 20px;
 }
 
+@media only screen and (max-width: 1000px) {
+  #Welcome .box {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+
 html [selected] {
   border: 2px solid black;
   border-radius: 4px;
